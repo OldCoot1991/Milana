@@ -1,0 +1,82 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(212, 244, 242);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out; /* добавляем анимацию на transform */
+    opacity: 0;
+    pointer-events: none; /* чтобы пользователь не мог взаимодействовать с элементами меню, когда оно скрыто */
+    z-index: 1000;
+}
+  
+  .menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto; /* возвращаем возможность взаимодействия с элементами меню */
+  }
+  
+  .ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .li {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: var(--Text-dark);
+    margin-bottom: 20px;  
+}
+
+  
+.closeBtn {
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: var(--Text-dark);
+    border-radius: 30px;
+    padding: 8px 15px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* тень кнопки */
+  
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease; /* добавляем плавный переход для всех свойств */
+  }
+  
+  .closeBtn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 1s ease, height 1s ease; /* добавляем анимацию для псевдоэлемента */
+    z-index: -1;
+  }
+  
+  .closeBtn:hover::before {
+    width: 100%;
+    height: 400%;
+  }
+  
+  .closeBtn:active {
+    transform: scale(0.95);
+  }

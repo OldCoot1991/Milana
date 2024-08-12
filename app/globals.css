@@ -1,0 +1,42 @@
+:root {
+  --text-dark: #033234;
+  --text-red: #D8135A;
+  --white: #ffff;
+  --star-river: #0DB0B8;
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #f5f4f2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.Roboto-Bold {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.Roboto-Regular {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.Manrope-Medium {
+  font-family: "Manrope";
+  font-weight: 500;
+}
+
+
