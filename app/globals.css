@@ -40,3 +40,22 @@ a {
 }
 
 
+.MainTopAboutUse_img_1 {
+  background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_1.png);
+}
+
+.MainTopAboutUse_img_2 {
+  background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_2.png);
+}
+
+@media (max-width: 1024px) {
+  .MainTopAboutUse_img_1 {
+    background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_mobail_1.png);
+  } 
+}
+
+@media (max-width: 1024px) {
+  .MainTopAboutUse_img_2 {
+    background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_mobail_2.png);
+  } 
+}
