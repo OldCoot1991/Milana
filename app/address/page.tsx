@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
+import styled from "styled-components";
+import AddressComponents from "../components/Address";
 
 export default function IndexPage() {
   return (
-    <div >
-        Контакты
-    </div>
+       <AddressComponents />
   );
 }
 
 export const metadata: Metadata = {
-  title: "",
+  title: "Контакты Док.Варикоз",
 };
+
+
+
+
+
+

@@ -47,9 +47,12 @@ function Menu({ isOpen, onClose }: MenuProps) {
           <li className={styless.li}><a href="./documets">Документы</a></li>
           <li className={styless.li}><a href="./services">Услуги</a></li>
           <li className={styless.li}><a href="./doctors">Врачи</a></li>
+          <li className={styless.li}><a href="./address">Контакты</a></li>
           <li className={styless.li}><a href="https://app.medtochka.ru/authorization/?next=%2F%3Flpu_hash%3D3f95a31a4856851683a3ebb7d764ff61%26source%3Dlpu_site">Личный кабинет</a></li>
         </ul>
         <button className={styless.closeBtn} onClick={onClose}>Закрыть</button>
       </div>
     );
   };
+
+  

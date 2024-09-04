@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Banner from "./components/Banner";
-import MainTopAboutUse from "./ui/mainAboutUse";
+import MainTopAboutUse from "./components/MainAboutUse.tsx";
 
 export default function IndexPage() {
   return (

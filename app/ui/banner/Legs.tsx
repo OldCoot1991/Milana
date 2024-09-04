@@ -11,7 +11,7 @@ const Img = styled(Image)`
   display: block;
   position: relative;
   z-index: 3;
-  top: calc(305px + (89 - 305) * ((100vw - 1024px) / (1920 - 1024)));
+  top: calc(305px + (159 - 305) * ((100vw - 1024px) / (1920 - 1024)));
   width: calc(694px + (1078 - 694) * ((100vw - 1024px) / (1920 - 1024)));
   height: calc(433px + (672 - 433) * ((100vw - 1024px) / (1920 - 1024)));
   right: calc(50.5px + (79.5 - 50.5) * ((100vw - 1024px) / (1920 - 1024)));

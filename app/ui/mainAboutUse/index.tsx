@@ -1,16 +1,7 @@
 "use client";
 import styled from "styled-components";
 
-const MainTopAboutUse = () => {
-  return (
-    <MainTopAboutUseContainer>
-      <MainTopImageAboutUseContainer>
-        <MainTopImageAboutUse className="MainTopAboutUse_img_1" />
-        <MainTopImageAboutUse className="MainTopAboutUse_img_2" />
-      </MainTopImageAboutUseContainer>
-    </MainTopAboutUseContainer>
-  );
-};
+
 
 const MainTopImageAboutUse = styled.div`
   height: calc(410px + (410 - 410) * ((100vw - 1024px) / (1920 - 1024)));
@@ -33,13 +24,36 @@ const MainTopImageAboutUse = styled.div`
       display: none;
     }
     height: calc(292px + (360 - 292) * ((100vw - 360px) / (710 - 360)));
-    width: calc(360px + (650 - 360) * ((100vw - 36 0px) / (710 - 360)));
+    width: calc(360px + (710 - 360) * ((100vw - 360px) / (710 - 360)));
+    background-position: center;
   }
+
+
+`;
+
+const MainBottomImageAboutUse = styled.div`
+  height: calc(410px + (566 - 410) * ((100vw - 1024px) / (1920 - 1024)));
+  width: calc(964px + (1530 - 964) * ((100vw - 1024px) / (1920 - 1024)));
+  border-radius: calc(30px + (40 - 30) * ((100vw - 1024px) / (1920 - 1024)));
+  background-size: cover;
+  box-sizing: border-box;
+  @media (max-width: 1024px) {
+    height: calc(292px + (410 - 292) * ((100vw - 768px) / (1024 - 768)));
+    width: calc(708px + (964 - 708) * ((100vw - 768px) / (1024 - 768)));
+    border-radius: calc(20px + (30 - 20) * ((100vw - 768px) / (1024 - 768)));
+  }
+  @media (max-width: 768px) {
+    height: calc(360px + (292 - 360) * ((100vw - 360px) / (768 - 360)));
+    width: calc(360px + (708 - 360) * ((100vw - 360px) / (768 - 360)));
+    border-radius: calc(0px + (20 - 0) * ((100vw - 360px) / (768 - 360)));
+  }
+ 
 
   @media (max-width: 360px) {
     border-radius: 0;
-    height: calc(350px + (360 - 350) * ((100vw - 360px) / (360 - 300)));
-    width: calc(300px + (360 - 300) * ((100vw - 360px) / (360 - 300)));
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
   }
 `;
 
@@ -68,4 +82,4 @@ const MainTopImageAboutUseContainer = styled.div`
   }
 `;
 
-export default MainTopAboutUse;
+export {MainTopImageAboutUseContainer , MainTopAboutUseContainer , MainBottomImageAboutUse , MainTopImageAboutUse}

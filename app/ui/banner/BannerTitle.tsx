@@ -31,7 +31,7 @@ const Title = styled.h1`
   position: relative;
   z-index: 3;
   color: var(--text-dark);
-  font-size: calc(64px + (80 - 64) * ((100vw - 1024px) / (1920 - 1024)));
+  font-size: calc(64px + (75 - 64) * ((100vw - 1024px) / (1920 - 1024)));
   width: calc(891px + (891 - 891) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 120%;
   text-align: right;
