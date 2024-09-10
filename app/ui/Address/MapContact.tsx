@@ -48,8 +48,7 @@ const BackMap = styled.div`
 `;
 
 const Map = styled.div`
-@media (max-width: 360px) {
-}
+height: 440px;
 `;
 const IFrame = styled.iframe`
 position: relative;
@@ -77,7 +76,6 @@ const MapContainer = styled.div`
   background-color: transparent;
   position: relative;
   top: 60px;
-  height: 400px;
   @media (max-width: 980px) {
     display: flex;
     top: 40px;

@@ -13,6 +13,9 @@ body {
   padding: 0;
   margin: 0;
   background: #f5f4f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 a {
@@ -34,7 +37,7 @@ a {
   font-weight: 400;
 }
 
-.Roboto-Regular {
+.Manrope-Regular {
   font-family: "Manrope";
   font-weight: 400;
 }

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import AboutUseTopContent from "../components/AboutUseTopContent";
+import { Container } from "../ui/AboutUseTopContent";
 
 export default function IndexPage() {
   return (
-    <div >
-        О нас
-    </div>
+    <Container>
+      <AboutUseTopContent />
+    </Container>
   );
 }
 

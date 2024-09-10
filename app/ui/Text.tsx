@@ -11,7 +11,7 @@ const Text: React.FC<TextProps> = ({
   text,
 }: TextProps) => {
   return (
-    <TextStyled className="Roboto-Regular" aria-label={text} title={text}>
+    <TextStyled className="Manrope-Regular" aria-label={text} title={text}>
       {text}
     </TextStyled>
   );
