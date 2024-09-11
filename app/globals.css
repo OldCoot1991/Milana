@@ -77,3 +77,8 @@ background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_3.png);
     background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_mobail_2.png);
   } 
 }
+
+
+.bg-about-use-top-content {
+  background-image: url(./ui/AboutUseTopContent/image/img1.png);
+}

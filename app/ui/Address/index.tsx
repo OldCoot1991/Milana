@@ -23,6 +23,7 @@ const Container = styled.div`
 const ContainerInfo = styled.div`
  display: flex;
  flex-direction: row;
+ flex-wrap: wrap;
  justify-content: space-between;
  width: 100%;
  gap: 10px;

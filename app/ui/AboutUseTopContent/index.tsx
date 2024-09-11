@@ -4,7 +4,7 @@ import img1 from "../../components/AboutUseTopContent/img1.png"
 
 const ContainerAboutUseContentTop = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   gap: calc(20px + (170 - 20) * ((100vw - 1024px) / (1920 - 1024)));
   @media (max-width: 1024px) {
@@ -43,16 +43,37 @@ flex-direction: column;
 `
 
 const ContainerCardAboutUse = styled.div`
-width: calc(460px + (600 - 460) * ((100vw - 1024px) / (1920 - 1024)));
-height: calc(540px + (750 - 540) * ((100vw - 1024px) / (1920 - 1024)));
+width: calc(440px + (600 - 440) * ((100vw - 1024px) / (1920 - 1024)));
+height: calc(520px + (750 - 520) * ((100vw - 1024px) / (1920 - 1024)));
+position: relative;
+z-index: 3;
 display: block;
+@media (max-width: 980px) {
+display: none;
+}
 `
 
-const ImageAboutUseTopContentCard = styled.img`
-width: 200px;
-height: 200px;
+const ImageAboutUseTopContentCard = styled.div`
+width: calc(440px + (600 - 440) * ((100vw - 1024px) / (1920 - 1024)));
+height: calc(520px + (750 - 520) * ((100vw - 1024px) / (1920 - 1024)));
+border-radius: 20px;
+background-color: white;
 background-size: cover;
+position: relative;
+z-index: 2;
+`
+
+const BgAboutUseTopContentCard = styled.div`
+width: calc(440px + (600 - 440) * ((100vw - 1024px) / (1920 - 1024)));
+height: calc(520px + (750 - 520) * ((100vw - 1024px) / (1920 - 1024)));
+background-size: cover;
+border-radius: 20px;
+background-color: #81E5EF;
+position: relative;
+z-index: 1;
+bottom: 760px;
+left: 20px;
 `
 
 
-export { ContainerAboutUseContentTop, ContainerContentAboutUse, Container , ContainerTextAboutUse , ContainerCardAboutUse , ImageAboutUseTopContentCard};
+export { ContainerAboutUseContentTop, ContainerContentAboutUse, Container , ContainerTextAboutUse , ContainerCardAboutUse , ImageAboutUseTopContentCard ,BgAboutUseTopContentCard };
