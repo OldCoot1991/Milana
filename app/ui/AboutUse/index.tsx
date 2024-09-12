@@ -40,6 +40,8 @@ const ContainerCard = styled.div`
   }
   @media (max-width: 768px) {
     width: calc(307px + (268 - 307) * ((100vw - 360px) / (768 - 360)));
+    gap: 0px;
+    margin-bottom: 20px;
   }
 `;
 

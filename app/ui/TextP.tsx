@@ -22,6 +22,7 @@ const TextStyled = styled.p<{ textAlign: string }>` // Добавляем тип
   color: var(--text-dark);
   font-size: calc(24px + (24 - 24) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 100%;
+  line-height: 120%;
   text-align: ${({ textAlign }) => textAlign}; // Используем переданное значение для text-align
 
   @media (max-width: 1024px) {
