@@ -82,3 +82,18 @@ background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_3.png);
 .bg-about-use-top-content {
   background-image: url(./ui/AboutUseTopContent/image/img1.png);
 }
+
+.img1 {
+  background-image: url(./ui/AboutUse/image/1.png);
+  background-size: cover;
+}
+
+.img2 {
+  background-image: url(./ui/AboutUse/image/2.png);
+  background-size: cover;
+}
+
+.img3 {
+  background-image: url(./ui/AboutUse/image/3.png);
+  background-size: cover;
+}

@@ -7,8 +7,10 @@ const ContainerAboutUseContentTop = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: calc(20px + (170 - 20) * ((100vw - 1024px) / (1920 - 1024)));
+  margin-top: 100px;
   @media (max-width: 1024px) {
     gap: 20px;
+    margin-top: 0px;
   }
 `;
 
@@ -18,23 +20,14 @@ const ContainerContentAboutUse = styled.div`
   justify-content: center;
   max-width: 1530px;
   width: 100%;
-  gap: calc(50px + (100 - 50) * ((100vw - 1024px) / (1920 - 1024)));
   margin: 0 auto;
   margin-bottom: calc(100px + (150 - 100) * ((100vw - 1024px) / (1920 - 1024)));
-  @media (max-width: 1024px) {
-    gap: 50px;
-    margin-bottom: 100px;
-  }
-  @media (max-width: 768px) {
-    gap: calc(30px + (50 - 30) * ((100vw - 360px) / (768 - 360)));
-  }
-  @media (max-width: 360px) {
-    gap: 30px;
-  }
 `;
 
 const Container = styled.div`
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 const ContainerTextAboutUse = styled.div`
@@ -61,6 +54,7 @@ background-color: white;
 background-size: cover;
 position: relative;
 z-index: 2;
+left: -20px;
 `
 
 const BgAboutUseTopContentCard = styled.div`
@@ -71,8 +65,8 @@ border-radius: 20px;
 background-color: #81E5EF;
 position: relative;
 z-index: 1;
-bottom: 760px;
-left: 20px;
+bottom: calc(540px + (780 - 540) * ((100vw - 1024px) / (1920 - 1024)));
+left: calc(0px + (25 - 0) * ((100vw - 1024px) / (1920 - 1024)));
 `
 
 
