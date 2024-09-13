@@ -1,10 +1,9 @@
 :root {
   --text-dark: #033234;
-  --text-red: #D8135A;
+  --text-red: #d8135a;
   --white: #ffff;
-  --star-river: #0DB0B8;
+  --star-river: #0db0b8;
 }
-
 
 html,
 body {
@@ -51,7 +50,6 @@ a {
   font-weight: 700;
 }
 
-
 .MainTopAboutUse_img_1 {
   background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_1.png);
 }
@@ -61,23 +59,22 @@ a {
 }
 
 .MainBottomAboutUse_img_3 {
-background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_3.png);
+  background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_3.png);
 }
 
 @media (max-width: 780px) {
   .MainBottomAboutUse_img_3 {
     background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_mobail_3.png);
-    }
+  }
 }
 @media (max-width: 1024px) {
   .MainTopAboutUse_img_1 {
     background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_mobail_1.png);
-  } 
+  }
   .MainTopAboutUse_img_2 {
     background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_mobail_2.png);
-  } 
+  }
 }
-
 
 .bg-about-use-top-content {
   background-image: url(./ui/AboutUseTopContent/image/img1.png);
@@ -101,7 +98,6 @@ background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_3.png);
 .bg-about-use-Bottom-content {
   background-image: url(./ui/AboutUse/image/4.png);
   background-size: cover;
-  
 }
 
 .milana {
@@ -131,7 +127,6 @@ background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_3.png);
   background-position: center;
 }
 
-
 .buttton-close {
   background-color: transparent;
   border-color: transparent;
@@ -149,4 +144,12 @@ background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_3.png);
   justify-content: space-between;
   width: 100%;
   align-items: center;
+}
+
+.img-button {
+  background-image: url(./ui/Documents/ButtonDownload.png);
+}
+
+.img-button-look {
+  background-image: url(./ui/Documents/look.png);
 }

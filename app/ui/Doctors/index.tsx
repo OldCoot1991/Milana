@@ -74,7 +74,7 @@ const ViewDoctorsContainer = styled.div`
   max-width: 1495px;
   width: 100%;
   display: flex;
-  
+  transition: all 0.5s;
 `;
 
 const ViewDoctorsContainerLeft = styled.div`

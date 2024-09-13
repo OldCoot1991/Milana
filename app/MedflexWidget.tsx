@@ -19,7 +19,6 @@ const MedflexWidget: React.FC = () => {
       id="medflexRoundWidgetData"
       data-src="https://booking.medflex.ru/?user=3f95a31a4856851683a3ebb7d764ff61&isRoundWidget=true"
     >
-      Запись
     </div>
   );
 };
