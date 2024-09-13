@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
+import { Container, ContainerDoctors } from "../ui/Doctors";
+import TitleSelection from "../ui/TitleSelection";
+import ListCardDoctor from "../items/Doctor";
 
 export default function IndexPage() {
   return (
-    <div >
-        Врачи
-    </div>
+    <Container>
+        <TitleSelection text={"Врачи клиники «Док.Варикоз»"} />
+        <ContainerDoctors>
+          <ListCardDoctor />
+        </ContainerDoctors>
+    </Container>
   );
 }
 

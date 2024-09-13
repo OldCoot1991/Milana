@@ -5,6 +5,7 @@ import "../app/styles/fonts.css";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import DesctopNav from "./components/Layout/Menu/DesctopNav";
+import MedflexWidget from "./MedflexWidget";
 
 interface Props {
   readonly children: ReactNode;
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: Props) {
           <Header />
           <DesctopNav />
           <main>{children}</main>
+          <MedflexWidget />
           <Footer />
         </body>
       </html>
