@@ -102,8 +102,8 @@ a {
 
 .milana {
   background-image: url(./ui/Doctors/images/milana.jpg);
-  width: 438px;
-  height: 521px;
+  width: calc(338px + (438 - 338) * ((100vw - 1024px) / (1920 - 1024)));
+  height: calc(421px + (521 - 421) * ((100vw - 1024px) / (1920 - 1024)));
   background-size: cover;
   border-radius: 40px;
   background-position: center;
@@ -111,8 +111,8 @@ a {
 
 .aznaur {
   background-image: url(./ui/Doctors/images/aznaur.jpg);
-  width: 438px;
-  height: 521px;
+  width: calc(338px + (438 - 338) * ((100vw - 1024px) / (1920 - 1024)));
+  height: calc(421px + (521 - 421) * ((100vw - 1024px) / (1920 - 1024)));
   background-size: cover;
   border-radius: 40px;
   background-position: center;
@@ -120,11 +120,29 @@ a {
 
 .bekhan {
   background-image: url(./ui/Doctors/images/bekhan.jpg);
-  width: 438px;
-  height: 521px;
+  width: calc(338px + (438 - 338) * ((100vw - 1024px) / (1920 - 1024)));
+  height: calc(421px + (521 - 421) * ((100vw - 1024px) / (1920 - 1024)));
   background-size: cover;
   border-radius: 40px;
   background-position: center;
+}
+
+@media (max-width: 1024px) {
+  .milana {
+    width: calc(260px + (338 - 260) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(330px + (421 - 330) * ((100vw - 768px) / (1024 - 768)));
+    border-radius: 20px;
+  }
+  .aznaur {
+    width: calc(260px + (338 - 260) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(330px + (421 - 330) * ((100vw - 768px) / (1024 - 768)));
+    border-radius: 20px;
+  }
+  .bekhan {
+    width: calc(260px + (338 - 260) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(330px + (421 - 330) * ((100vw - 768px) / (1024 - 768)));
+    border-radius: 20px;
+  }
 }
 
 .buttton-close {

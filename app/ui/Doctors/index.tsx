@@ -1,56 +1,63 @@
-"use client"
+"use client";
 
 import styled from "styled-components";
 import Image from "next/image";
 
 const Container = styled.div`
-display: flex;
-flex-direction: column;
-`
+  display: flex;
+  flex-direction: column;
+`;
 
 const ContainerDoctors = styled.div`
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-gap: 20px;
-padding-left: 150px;
-padding-right: 150px;
-`
-
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: calc(20px + (50 - 20) * ((100vw - 1024px) / (1920 - 1024)));
+  padding-left: calc(10px + (150 - 10) * ((100vw - 360px) / (1920 - 360)));
+  padding-right: calc(10px + (150 - 10) * ((100vw - 360px) / (1920 - 360)));
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
 
 const CardDoctorsContainer = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding-top: 10px;
-padding-right: 10px;
-padding-bottom: 10px;
-border-radius: 40px;
-max-width: 438px;
-text-align: center;
-`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: calc(380px + (438 - 380) * ((100vw - 1024px) / (1920 - 1024)));
+  text-align: center;
+  @media (max-width: 1024px) {
+    width: calc(290px + (380 - 290) * ((100vw - 768px) / (1024 - 768)));
+  }
+  @media (max-width: 768px) {
+  }
+`;
 
 const CardDoctorsName = styled.p`
-font-size: 32px;
-line-height: 120%;
-text-align: center;
-padding-left: 20px;
-padding-right: 20px;
-`
+  font-size: calc(26px + (32 - 26) * ((100vw - 1024px) / (1920 - 1024)));
+  line-height: 120%;
+  text-align: center;
+  @media (max-width: 1024px) {
+    font-size: calc(22px + (26 - 22) * ((100vw - 768px) / (1024 - 768)));
+  }
+`;
 
 const CardDoctorsProfile = styled.span`
-font-size: 24px;
-line-height: 120%;
-padding-left: 20px;
-padding-right: 20px;
-`
+  font-size: calc(20px + (24 - 20) * ((100vw - 1024px) / (1920 - 1024)));
+  line-height: 120%;
+  @media (max-width: 1024px) {
+    font-size: calc(18px + (20 - 18) * ((100vw - 768px) / (1024 - 768)));
+  }
+`;
 
 const CardDoctorsImageDiv = styled.div`
-height: 150px;
-width: 100px;
-background-image: url(../../components/Doctors/images/milana.jpg);
-`
+  height: 150px;
+  width: 100px;
+  background-image: url(../../components/Doctors/images/milana.jpg);
+`;
 
 // Стили для модального окна и фона
 const Overlay = styled.div`
@@ -78,25 +85,37 @@ const ViewDoctorsContainer = styled.div`
 `;
 
 const ViewDoctorsContainerLeft = styled.div`
-height: 100%;
-padding: 50px 30px;
-background-color: #0DB0B8;
-border-top-left-radius: 40px;
-border-bottom-left-radius: 40px;
-`
+  height: 100%;
+  padding: 50px 30px;
+  background-color: #0db0b8;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+`;
 const ViewDoctorsContainerRight = styled.div`
-display: flex;
-flex-direction: column;
-gap: 40px;
-width: 100%;
-padding-left: 50px;
-padding-right: 50px;
-padding-bottom: 50px;
-`
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+`;
 const ViewContainerText = styled.div`
-display: flex;
-flex-direction: column;
-gap: 10px;
-margin-top: 40px;
-`
-export {ViewContainerText, ViewDoctorsContainerLeft , ViewDoctorsContainerRight , ViewDoctorsContainer ,Container, CardDoctorsContainer, ContainerDoctors , CardDoctorsName , CardDoctorsProfile , CardDoctorsImageDiv , Overlay  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+`;
+export {
+  ViewContainerText,
+  ViewDoctorsContainerLeft,
+  ViewDoctorsContainerRight,
+  ViewDoctorsContainer,
+  Container,
+  CardDoctorsContainer,
+  ContainerDoctors,
+  CardDoctorsName,
+  CardDoctorsProfile,
+  CardDoctorsImageDiv,
+  Overlay,
+};
