@@ -33,12 +33,14 @@ const CardDoctorsContainer = styled.div`
     width: calc(290px + (380 - 290) * ((100vw - 768px) / (1024 - 768)));
   }
   @media (max-width: 768px) {
+    height: 100%;
   }
 `;
 
 const CardDoctorsName = styled.p`
   font-size: calc(26px + (32 - 26) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 120%;
+  width: 80%;
   text-align: center;
   @media (max-width: 1024px) {
     font-size: calc(22px + (26 - 22) * ((100vw - 768px) / (1024 - 768)));
@@ -78,10 +80,15 @@ const ViewDoctorsContainer = styled.div`
   background: white;
   border-radius: 40px;
   z-index: 1001;
-  max-width: 1495px;
-  width: 100%;
+  width: calc(900px + (1300 - 1000) * ((100vw - 1024px) / (1920 - 1024)));
   display: flex;
   transition: all 0.5s;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border-radius: 20px;
+  }
 `;
 
 const ViewDoctorsContainerLeft = styled.div`
@@ -90,6 +97,16 @@ const ViewDoctorsContainerLeft = styled.div`
   background-color: #0db0b8;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
+  @media (max-width: 900px) {
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 `;
 const ViewDoctorsContainerRight = styled.div`
   display: flex;
@@ -99,12 +116,22 @@ const ViewDoctorsContainerRight = styled.div`
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
+  @media (max-width: 900px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+  }
 `;
 const ViewContainerText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 40px;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+  }
 `;
 export {
   ViewContainerText,

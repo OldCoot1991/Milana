@@ -8,27 +8,27 @@ import ViewDoctorsContainerComponents from "../components/Doctors/ViewDoctorsCon
 
 export default function ListCardDoctor() {
   const [docId, setDocId] = useState<string | null>(null);
-  const [isVisible, setIsVisible] = useState<boolean>(false); // Стейт для модального окна
+  const [isVisible, setIsVisible] = useState<boolean>(false); 
 
   const handleCardClick = (id: string) => {
     setDocId(id);
-    setIsVisible(true); // Открыть модальное окно при клике на карточку
+    setIsVisible(true); 
   };
 
   const handleCloseModal = () => {
-    setIsVisible(false); // Закрыть модальное окно
-    setDocId(null); // Сбросить состояние docId
+    setIsVisible(false); 
+    setDocId(null); 
   };
 
-  // Получаем массив ключей из второго массива
+  
   const viewDoctorKeys = ViewArrayListCardDoctor.map((doctor) => doctor.key);
 
-  // Фильтруем врачей по ключам из обоих массивов
+  
   const filteredDoctors = ArrayListCardDoctor.filter((doctor) =>
     viewDoctorKeys.includes(doctor.key)
   );
 
-  // Находим выбранного врача по docId
+ 
   const selectedDoctor = ViewArrayListCardDoctor.find(
     (doctor) => doctor.key === docId
   );
@@ -39,7 +39,7 @@ export default function ListCardDoctor() {
         <CardDoctor
           key={doctor.key}
           name={doctor.name}
-          onClick={() => handleCardClick(doctor.key)} // Передаем ключ при клике
+          onClick={() => handleCardClick(doctor.key)} 
           profile={doctor.profile}
           classImage={doctor.image}
         />

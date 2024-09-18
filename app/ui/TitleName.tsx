@@ -29,6 +29,6 @@ const Title = styled.span<{textColor: string }>`
     font-size: calc(22px + (24 - 22) * ((100vw - 768px) / (1024 - 768)));
   }
   @media (max-width: 768px) {
-    font-size: calc(20px + (22 - 20) * ((100vw - 360px) / (768 - 360)));
+    font-size: calc(16px + (22 - 16) * ((100vw - 360px) / (768 - 360)));
   }
 `;

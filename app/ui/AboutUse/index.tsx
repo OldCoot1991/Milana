@@ -34,7 +34,7 @@ const ContainerCard = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: calc(339px + (483 - 339) * ((100vw - 1024px) / (1920 - 1024)));
+  width: calc(239px + (339 - 239) * ((100vw - 1024px) / (1920 - 1024)));
   @media (max-width: 1030px) {
     width: calc(268px + (339 - 268) * ((100vw - 768px) / (1024 - 768)));
   }

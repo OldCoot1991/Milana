@@ -43,6 +43,6 @@ const TextStyled = styled.p<{ textAlign: string; textColor: string }>`
   }
 
   @media (max-width: 768px) {
-    font-size: calc(18px + (20 - 18) * ((100vw - 360px) / (768 - 360)));
+    font-size: calc(16px + (20 - 16) * ((100vw - 360px) / (768 - 360)));
   }
 `;

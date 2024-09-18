@@ -145,15 +145,44 @@ a {
   }
 }
 
+@media (max-width: 900px) {
+  .milana {
+   margin: 0 auto;
+  }
+  .aznaur {
+    margin: 0 auto;
+  }
+  .bekhan {
+    margin: 0 auto;
+  }
+}
+
 .buttton-close {
   background-color: transparent;
   border-color: transparent;
-  width: 40px;
-  height: 40px;
-  font-size: 40px;
-  font-weight: 100;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  font-weight: 500;
   margin: 0;
   cursor: pointer;
+  color: #033234;
+  border: 1px solid #033234;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@media (max-width: 900px) {
+  .buttton-close {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 500;
+  }
 }
 
 .flex-row-beetween {
@@ -161,6 +190,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
   align-items: center;
 }
 
