@@ -150,7 +150,7 @@ const LAptopAndMobailMainAboutUseContainerText = styled.div`
 
 const MainCenterImageAboutUseContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 `;
 
 const MainTopImageAboutUseContainer = styled.div`
