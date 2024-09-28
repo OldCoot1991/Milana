@@ -95,6 +95,11 @@ a {
   background-size: cover;
 }
 
+.MainAboutUse_Logo {
+  background-image: url(./ui/mainAboutUse/image/Logo.svg);
+  background-size: cover;
+}
+
 .bg-about-use-Bottom-content {
   background-image: url(./ui/AboutUse/image/4.png);
   background-size: cover;

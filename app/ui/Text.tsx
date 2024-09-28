@@ -21,7 +21,7 @@ export default Text;
 
 const TextStyled = styled.p`
   color: var(--text-dark);
-  font-size: calc(24px + (32 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+  font-size: calc(24 + (32 - 24) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 100%;
   text-align: left;
   @media (max-width: 1024px) {
