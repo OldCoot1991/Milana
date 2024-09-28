@@ -116,6 +116,9 @@ const TextP = styled.p<{textColor: string }>`
   font-size: calc(24px + (24 - 24) * ((100vw - 768px) / (1920 - 768)));
   line-height: 120%;
   margin: 0;
+  @media (max-width: 1600px) {
+    text-align: center;
+  }
   @media (max-width: 768px) {
     font-size: calc(18px + (24 - 18) * ((100vw - 360px) / (768 - 360)));
   }
@@ -138,13 +141,14 @@ const LAptopAndMobailMainAboutUseContainerText = styled.div`
   display: none;
   @media (max-width: 1600px) {
     display: flex;
-    width: 80%;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    width: 85%;
     }
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     gap: 20px;
+    width: 95%;
   }
 `;
 
