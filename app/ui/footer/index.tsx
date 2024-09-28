@@ -9,7 +9,7 @@ const FooterLayout = styled.footer`
   padding-bottom: 60px;
   background-color: #0DB0B8;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-around; 
   @media (max-width: 1024px) {
     margin-top: 50px;
     padding-top: 100px;

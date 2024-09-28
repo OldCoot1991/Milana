@@ -11,7 +11,7 @@ const Container = styled.div`
   align-items: center;
   padding-left: calc(50px + (195 - 50) * ((100vw - 1024px) / (1920 - 1024)));
   padding-right: calc(50px + (195 - 50) * ((100vw - 1024px) / (1920 - 1024)));
-  margin-bottom: 100px;
+  margin-bottom: 250px;
   @media (max-width: 1024px) {
     padding-left: calc(40px + (60 - 40) * ((100vw - 768px) / (1024 - 768)));
     padding-right: calc(40px + (60 - 40) * ((100vw - 768px) / (1024 - 768)));
