@@ -4,18 +4,24 @@ import MainTopAboutUse from "./components/MainAboutUse.tsx";
 import { Container, ContainerDoctors } from "./ui/Doctors";
 import TitleSelection from "./ui/TitleSelection";
 import ListCardDoctor from "./items/Doctor";
+import { ContainerMap } from "./ui/Address";
+import MapContact from "./ui/Address/MapContact";
+import IFrame from "./ui/Address/IframeMaip";
 
 export default function IndexPage() {
   return (
-    <div >
+    <div>
       <Banner />
       <MainTopAboutUse />
       <Container>
+        <TitleSelection text={"Услуги"} />
         <TitleSelection text={"Врачи клиники «Док.Варикоз»"} />
         <ContainerDoctors>
           <ListCardDoctor />
         </ContainerDoctors>
-    </Container>
+        <TitleSelection text={"Адрес и контакты"} />
+        <IFrame src="https://yandex.ru/map-widget/v1/org/dok_varikoz/77813633340/?ll=43.626610%2C43.480327&z=17"></IFrame>
+      </Container>
     </div>
   );
 }
