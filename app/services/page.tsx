@@ -10,29 +10,18 @@ import {
   ButtonLinkCardServices,
   RigthContainerCards,
 } from "./ui";
+import Image from "next/image";
+import img1 from "./images/Group.png";
+import ArrayServicesList from "../array/ArratServicesList";
 
 export default function IndexPage() {
   return (
-    <div>
+    <div className="container-serv">
       <TitleSelection text={"Услуги и цены"} />
       <SubTitleServices className="Manrope-Bold">Флебология</SubTitleServices>
-      <ContainerCards>
-        <CardServices>
-          <RigthContainerCards>
-            <TitleCardServices className="Manrope-Bold">
-              Узи вен нижних конечностей
-            </TitleCardServices>
-            <ContainerSumAndButtons>
-              <SumTextCardServices className="Manrope-Bold">
-                1 500 ₽
-              </SumTextCardServices>
-              <ButtonLinkCardServices className="Manrope-Medium" target="_blank">
-                Подробно
-              </ButtonLinkCardServices>
-              </ContainerSumAndButtons>
-          </RigthContainerCards>
-      </CardServices>
-    </ContainerCards><SubTitleServices className="Manrope-Bold">Психиатрия</SubTitleServices><SubTitleServices className="Manrope-Bold">
+      <ArrayServicesList />
+      <SubTitleServices className="Manrope-Bold">Психиатрия</SubTitleServices>
+      <SubTitleServices className="Manrope-Bold">
         Аллергология-иммунология, пульмонология
       </SubTitleServices>
     </div>

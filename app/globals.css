@@ -206,3 +206,21 @@ a {
   background-image: url(./ui/Documents/look.png);
 }
 
+.flebol-img {
+  height: 120px;
+}
+
+@media (max-width: 600px) {
+  .flebol-img {
+    height: 60px;
+    width: auto;
+  }
+}
+
+.container-serv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
