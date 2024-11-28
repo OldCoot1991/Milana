@@ -31,7 +31,7 @@ export default TextViewDoc;
 
 const TextStyled = styled.p<{ textAlign: string; textColor: string }>`
   // Добавляем типизацию для текстового выравнивания
-  color: ${({ textColor }) => textColor};
+  color: ${(props) => props.textColor};
   font-size: calc(22px + (24 - 22) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 120%;
   margin: 0;

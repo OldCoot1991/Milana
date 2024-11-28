@@ -22,7 +22,7 @@ const TitleSelection: React.FC<TitleSelectionProps> = ({
 export default TitleSelection;
 
 const Title = styled.span<{textColor: string }>`
- color: ${({ textColor }) => textColor};
+ color: ${(props) => props.textColor};
   font-size: calc(24px + (24 - 24) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 120%;
   @media (max-width: 1024px) {
