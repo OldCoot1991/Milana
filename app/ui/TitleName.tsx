@@ -13,7 +13,7 @@ const TitleSelection: React.FC<TitleSelectionProps> = ({
   textColor = "#033234",
 }: TitleSelectionProps) => {
   return (
-    <Title className="Manrope-Bold" aria-label={text} title={text} textColor={textColor} >
+    <Title className="Manrope-Bold" aria-label={text} title={text} $textColor={textColor} >
       {text}
     </Title>
   );
@@ -21,8 +21,8 @@ const TitleSelection: React.FC<TitleSelectionProps> = ({
 
 export default TitleSelection;
 
-const Title = styled.span<{textColor: string }>`
- color: ${(props) => props.textColor};
+const Title = styled.span<{$textColor: string }>`
+ color: ${(props) => props.$textColor};
   font-size: calc(24px + (24 - 24) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 120%;
   @media (max-width: 1024px) {

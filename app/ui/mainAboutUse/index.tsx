@@ -111,8 +111,8 @@ const MainAboutUseTitle = styled.h1`
   }
 `;
 
-const TextP = styled.p<{textColor: string }>`
- color: ${(props) => props.textColor};
+const TextP = styled.p<{$textColor: string }>`
+ color: ${(props) => props.$textColor};
   font-size: calc(24px + (24 - 24) * ((100vw - 768px) / (1920 - 768)));
   line-height: 120%;
   margin: 0;
