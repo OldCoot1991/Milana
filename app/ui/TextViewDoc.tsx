@@ -20,7 +20,7 @@ const TextViewDoc: React.FC<TextProps> = ({
       aria-label={text}
       title={text}
       textAlign={textAlign}
-      textColor={textColor}
+      $textColor={textColor}
     >
       {text}
     </TextStyled>
@@ -29,9 +29,9 @@ const TextViewDoc: React.FC<TextProps> = ({
 
 export default TextViewDoc;
 
-const TextStyled = styled.p<{ textAlign: string; textColor: string }>`
+const TextStyled = styled.p<{ textAlign: string; $textColor: string }>`
   // Добавляем типизацию для текстового выравнивания
-  color: ${(props) => props.textColor};
+  color: ${(props) => props.$textColor};
   font-size: calc(22px + (24 - 22) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 120%;
   margin: 0;

@@ -26,12 +26,12 @@ const MainTopAboutUse = () => {
             <MainAboutUseTitle className="Manrope-Bold">
               Клиника флебологии
             </MainAboutUseTitle>
-            <TextP textColor="#033234" className="Manrope-Regular">
+            <TextP $textColor="#033234" className="Manrope-Regular">
               В Инновационном сосудистом центре Док.Варикоз ведут прием
               высококвадифицированные специалисты в области сосудистой хирургии,
               флебологии.
             </TextP>
-            <TextP textColor="#033234" className="Manrope-Regular">
+            <TextP $textColor="#033234" className="Manrope-Regular">
               Осуществляется консультативный прием врачей по специльностям
               "Психиатрия", "Аллергология-иммунология", "Неврология".
             </TextP>
@@ -42,12 +42,12 @@ const MainTopAboutUse = () => {
       <MainAboutUseTitle className="Manrope-Bold">
               Клиника флебологии
             </MainAboutUseTitle>
-            <TextP textColor="#033234" className="Manrope-Regular">
+            <TextP $textColor="#033234" className="Manrope-Regular">
               В Инновационном сосудистом центре Док.Варикоз ведут прием
               высококвадифицированные специалисты в области сосудистой хирургии,
               флебологии.
             </TextP>
-            <TextP textColor="#033234" className="Manrope-Regular">
+            <TextP $textColor="#033234" className="Manrope-Regular">
               Осуществляется консультативный прием врачей по специльностям
               "Психиатрия", "Аллергология-иммунология", "Неврология".
             </TextP>
