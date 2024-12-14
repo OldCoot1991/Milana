@@ -46,6 +46,4 @@ jobs:
 
     steps:
       - name: Webhook remote VPS
-      - env:
-          ARTIFACT_URL: ${{needs.build.outputs.artifactUrl}}
-        run: echo "Artifact url from previous job is $ARTIFACT_URL"
+        run: echo "Artifact url from previous job is ${{needs.build.outputs.artifactUrl}}"
