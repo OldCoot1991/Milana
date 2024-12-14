@@ -12,10 +12,12 @@ jobs:
       artifactUrl: ${{ steps.artifact-upload-step.outputs.artifact-url }}
     steps:
       - uses: actions/checkout@v4
+
       - name: Build project
         run: |
           npm ci
           npm run build
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         id: artifact-upload-step
@@ -26,8 +28,9 @@ jobs:
             package.json
             package-lock.json
             next.config.mjs
-          retention-days: 5
+          retention-days: 3
           include-hidden-files: true
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
