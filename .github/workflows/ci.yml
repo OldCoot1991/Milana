@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     outputs:
-      artifactUrl: ${{ steps.artifact-upload-step.outputs.artifact-url }}
+      artifactId: ${{ steps.artifact-upload-step.outputs.artifact-id }}
     steps:
       - uses: actions/checkout@v4
 
@@ -37,4 +37,4 @@ jobs:
     needs: build
     steps:
       - name: Webhook remote VPS
-        run: echo "Artifact url from previous job is ${{needs.build.outputs.artifactUrl}}"
+        run: curl -H "Content-Type: application/json" -d '{"artifactId": ${{needs.build.outputs.artifactId}}}' https://docvaricose.ru/deploy
