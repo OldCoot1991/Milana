@@ -24,7 +24,6 @@ jobs:
             package.json
             package-lock.json
             next.config.mjs
-            ecosystem.config.js
           retention-days: 3
           include-hidden-files: true
 
@@ -34,4 +33,4 @@ jobs:
     steps:
       - name: Webhook remote VPS
         run: |
-          curl -H "Content-Type: application/json" -d '{"artifactId": ${{needs.build.outputs.artifactId}}}' https://docvaricose.ru/deploy
+          curl -v -H "Content-Type: application/json" -d '{"artifactId": ${{needs.build.outputs.artifactId}}}' https://docvaricose.ru/deploy
