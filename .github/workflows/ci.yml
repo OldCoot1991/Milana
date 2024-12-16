@@ -37,4 +37,5 @@ jobs:
     needs: build
     steps:
       - name: Webhook remote VPS
-        run: curl -H "Content-Type: application/json" -d '{"artifactId": ${{needs.build.outputs.artifactId}}}' https://docvaricose.ru/deploy
+        run: |
+          curl -H "Content-Type: application/json" -d '{"artifactId": ${{needs.build.outputs.artifactId}}}' https://docvaricose.ru/deploy
