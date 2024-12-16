@@ -6,7 +6,7 @@ export default function Banner( ) {
     return (
         <BannerUi> 
             <Legs />
-            <TitleBanner text={"Лазерное лечение Варикоза «Всё включено» с выгодой от 10 000 ₽"}/>
+            <TitleBanner text={"!Лазерное лечение Варикоза «Всё включено» с выгодой от 10 000 ₽"}/>
         </BannerUi>
     )
 }
