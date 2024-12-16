@@ -12,7 +12,7 @@ const TitleBanner: React.FC<TitleBannerProps> = ({
 }: TitleBannerProps) => {
   return (
     <Title className="Manrope-Medium" aria-label={text} title={text}>
-      Лазерное лечение Варикоза <br/> «Всё включено»
+      !Лазерное лечение Варикоза <br/> «Всё включено»
       <br />
       <SpanBanner>с выгодой</SpanBanner>
       {` `}
