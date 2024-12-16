@@ -28,6 +28,7 @@ jobs:
             package.json
             package-lock.json
             next.config.mjs
+            ecosystem.config.js
           retention-days: 3
           include-hidden-files: true
 
