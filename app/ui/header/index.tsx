@@ -5,21 +5,18 @@ const HeaderLayout = styled.header`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: calc(50px + (100 - 50) * ((100vw - 1024px) / (1920 - 1024)));
-  padding-right: calc(50px + (100 - 50) * ((100vw - 1024px) / (1920 - 1024)));
+  padding-left: calc(30px + (50 - 30) * ((100vw - 1024px) / (1920 - 1024)));
+  padding-right: calc(30px + (50 - 30) * ((100vw - 1024px) / (1920 - 1024)));
   @media (max-width: 1024px) {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: calc(20px + (50 - 20) * ((100vw - 360px) / (768 - 360)));
-    padding-right: calc(20px + (50 - 20) * ((100vw - 360px) / (768 - 360)));
-    padding-top: calc(20px + (30 - 20) * ((100vw - 360px) / (768 - 360)));
-    padding-bottom: calc(20px + (30 - 20) * ((100vw - 360px) / (768 - 360)));
+  @media (max-width: 730px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 `;
+
 
 const Element1 = styled.div`
   display: flex;
