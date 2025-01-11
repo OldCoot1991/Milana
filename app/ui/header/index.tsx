@@ -8,8 +8,8 @@ const HeaderLayout = styled.header`
   padding-left: calc(30px + (50 - 30) * ((100vw - 1024px) / (1920 - 1024)));
   padding-right: calc(30px + (50 - 30) * ((100vw - 1024px) / (1920 - 1024)));
   @media (max-width: 1024px) {
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   @media (max-width: 730px) {
     padding-top: 10px;
