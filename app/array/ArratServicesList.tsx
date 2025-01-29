@@ -6,6 +6,7 @@ import img4 from "../services/images/img4.png"
 import img5 from "../services/images/img5.png"
 import img6 from "../services/images/img6.png"
 import img8 from "../services/images/img8.png"
+import { ButtonLinkServices } from "@/src/ui/ButtonLinkServices";
 
 
 // Ваш массив с услугами
@@ -82,9 +83,9 @@ export default function ArrayServicesList() {
                             <SumTextCardServices className="Manrope-Bold">
                                 {service.price}
                             </SumTextCardServices>
-                            <ButtonLinkCardServices className="Manrope-Medium" target="_blank" href={service.detailsLink}>
+                            <ButtonLinkServices  href={service.detailsLink}>
                                 Подробно
-                            </ButtonLinkCardServices>
+                            </ButtonLinkServices>
                         </ContainerSumAndButtons>
                     </RigthContainerCards>
                 </CardServices>

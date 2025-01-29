@@ -1,0 +1,12 @@
+.button_link {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 20px;
+  line-height: 120%;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0db0b8;
+  font-family: "Manrope";
+  font-weight: 500;
+}
