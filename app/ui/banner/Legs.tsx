@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import styled from "styled-components";
-import legs from "./image/legs.svg";
+import legs from "./image/Legs.svg";
 
 export default function Legs() {
   return <Img src={legs} alt="legs" />;
