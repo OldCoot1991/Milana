@@ -56,10 +56,14 @@ a {
 
 .MainTopAboutUse_img_2 {
   background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_2.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .MainBottomAboutUse_img_3 {
   background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_3.png);
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 780px) {
@@ -114,8 +118,8 @@ a {
   background-position: center;
 }
 
-.aznaur {
-  background-image: url(./ui/Doctors/images/aznaur.jpg);
+.ishak {
+  background-image: url(./ui/Doctors/images/ishak.jpg);
   width: calc(338px + (438 - 338) * ((100vw - 1024px) / (1920 - 1024)));
   height: calc(421px + (521 - 421) * ((100vw - 1024px) / (1920 - 1024)));
   background-size: cover;
@@ -152,7 +156,7 @@ a {
 
 @media (max-width: 900px) {
   .milana {
-   margin: 0 auto;
+    margin: 0 auto;
   }
   .aznaur {
     margin: 0 auto;
@@ -177,7 +181,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 @media (max-width: 900px) {

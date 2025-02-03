@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 const MainTopImageAboutUse = styled.div`
-  height: calc(410px + (410 - 410) * ((100vw - 1024px) / (1920 - 1024)));
+  height: calc(410px + (510 - 410) * ((100vw - 1024px) / (1920 - 1024)));
   width: calc(472px + (740 - 472) * ((100vw - 1024px) / (1920 - 1024)));
   border-radius: calc(30px + (40 - 30) * ((100vw - 1024px) / (1920 - 1024)));
   background-size: cover;
