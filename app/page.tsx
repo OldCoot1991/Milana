@@ -4,8 +4,6 @@ import MainTopAboutUse from "./components/MainAboutUse.tsx";
 import { Container, ContainerDoctors } from "./ui/Doctors";
 import TitleSelection from "./ui/TitleSelection";
 import ListCardDoctor from "./items/Doctor";
-import { ContainerMap } from "./ui/Address";
-import MapContact from "./ui/Address/MapContact";
 import IFrame from "./ui/Address/IframeMaip";
 
 export default function IndexPage() {
@@ -27,5 +25,6 @@ export default function IndexPage() {
 }
 
 export const metadata: Metadata = {
-  title: "",
+  title: "Клиника Док.Варикоз",
+  icons: "/favicon.ico",
 };
