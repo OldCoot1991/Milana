@@ -13,8 +13,10 @@ function CardDoctor({...props}:ICardDoctor){
     return (
             <CardDoctorsContainer key={props.key} onClick={props.onClick}>
                 <div className={props.classImage}/>
+                <div className="container-doc">
                 <CardDoctorsName className="Manrope-Bold">{props.name}</CardDoctorsName>
                 <CardDoctorsProfile className="Manrope-Regular">{props.profile}</CardDoctorsProfile>
+                </div>
                 {/* <button className="Manrope-Regular" onClick={}>Подробнее</button> */}
             </CardDoctorsContainer>
     )

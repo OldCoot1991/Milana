@@ -24,9 +24,8 @@ const ContainerDoctors = styled.div`
 const CardDoctorsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100%;
   margin-top: 20px;
   width: calc(380px + (438 - 380) * ((100vw - 1024px) / (1920 - 1024)));
   text-align: center;
