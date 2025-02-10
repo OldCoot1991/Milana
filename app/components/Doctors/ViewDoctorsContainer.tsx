@@ -1,5 +1,4 @@
 import {
-  Overlay,
   ViewDoctorsContainer,
   ViewDoctorsContainerRight,
   ViewDoctorsContainerLeft,
@@ -19,7 +18,7 @@ interface IProps {
 }
 export default function ViewDoctorsContainerComponents({ ...props }: IProps) {
   return (
-    <Overlay>
+    <>
       <ViewDoctorsContainer key={props.key} onClick={props.onClick}>
         <ViewDoctorsContainerLeft>
           <div className={props.image} />
@@ -45,6 +44,6 @@ export default function ViewDoctorsContainerComponents({ ...props }: IProps) {
           </div>
         </ViewDoctorsContainerRight>
       </ViewDoctorsContainer>
-    </Overlay>
+    </>
   );
 }

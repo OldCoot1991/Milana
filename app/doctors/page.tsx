@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Container, ContainerDoctors } from "../ui/Doctors";
 import TitleSelection from "../ui/TitleSelection";
-import ListCardDoctor from "../items/Doctor";
 import { ViewArrayListCardDoctor } from "../array/ViewArrayListCardDoctor";
+import SwiperComponents from "../components/Swiper/Swiper";
 
 export default function IndexPage() {
     return (
@@ -12,9 +12,7 @@ export default function IndexPage() {
                     <TitleSelection text={"Врачи клиники «Док.Варикоз»"} />
                 </header>
                 <main>
-                    <ContainerDoctors>
-                        <ListCardDoctor />
-                    </ContainerDoctors>
+                        <SwiperComponents />
                 </main>
                 <script type="application/ld+json">
                     {JSON.stringify({
