@@ -11,7 +11,7 @@ const TitleViewSelection: React.FC<TitleSelectionProps> = ({
   text,
 }: TitleSelectionProps) => {
   return (
-    <Title className="Manrope-Medium" aria-label={text} title={text}>
+    <Title className="Manrope-Bold" aria-label={text} title={text}>
       {text}
     </Title>
   );

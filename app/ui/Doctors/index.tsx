@@ -86,7 +86,7 @@ const ViewDoctorsContainer = styled.div`
 const ViewDoctorsContainerLeft = styled.div`
   height: 100%;
   padding: 50px 30px;
-  background-color: #0db0b8;
+  background-color: rgba(13, 176, 184, 1);
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
   @media (max-width: 900px) {

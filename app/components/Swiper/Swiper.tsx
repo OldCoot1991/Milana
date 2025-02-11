@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import { ViewArrayListCardDoctor } from "@/app/array/ViewArrayListCardDoctor";
-import CardDoctor from "../Doctors";
+import { CardDoctor } from "../Doctors";
 import ViewDoctorsContainerComponents from "../Doctors/ViewDoctorsContainer";
 
 export default function SwiperComponents() {
@@ -19,13 +19,11 @@ export default function SwiperComponents() {
     setIsVisible(false);
     setDocId(null);
   };
+
   const handleCardClick = (id: string) => {
     setDocId(id);
     setIsVisible(true);
   };
-
-
-  
 
   const selectedDoctor = ViewArrayListCardDoctor.find(
     (doctor) => doctor.key === docId
@@ -34,7 +32,7 @@ export default function SwiperComponents() {
   return (
     <div className="container-swiper">
       <Swiper
-        ref={swiperRef} // Связываем ref со Swiper
+        ref={swiperRef}
         slidesPerView={3}
         spaceBetween={0}
         loop={true}
@@ -56,11 +54,14 @@ export default function SwiperComponents() {
               onClick={() => handleCardClick(doctor.key)}
               profile={doctor.profile}
               classImage={doctor.image}
+              medicalAssociations={doctor.medicalAssociations || []} // значение по умолчанию
+              treatmentProfile={doctor.treatmentProfile || []} // значение по умолчанию
+              education={doctor.education || []} // значение по умолчанию
+              workExperience={doctor.workExperience || []} // значение по умолчанию
             />
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* Используем ref для доступа к методам Swiper */}
       <button
         onClick={() => swiperRef.current?.slidePrev()}
         className="swiper-button-prev"
@@ -81,7 +82,11 @@ export default function SwiperComponents() {
           image={selectedDoctor.image}
           profile={selectedDoctor.profile}
           internship={selectedDoctor.internship}
-        />
+          medicalAssociations={selectedDoctor.medicalAssociations || []} // значение по умолчанию
+          treatmentProfile={selectedDoctor.treatmentProfile || []} // значение по умолчанию
+          education={selectedDoctor.education || []} // значение по умолчанию
+          workExperience={selectedDoctor.workExperience || []} // значение по умолчан
+          classImage={""}        />
       )}
     </div>
   );
