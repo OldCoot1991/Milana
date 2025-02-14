@@ -24,50 +24,6 @@ interface ICardDoctor {
             <div className="container-doc">
                 <CardDoctorsName className="Manrope-Bold">{props.name}</CardDoctorsName>
                 <CardDoctorsProfile className="Manrope-Regular">{props.profile}</CardDoctorsProfile>
-                
-                {/* Добавьте информацию о медицинских ассоциациях */}
-                <div>
-                    <strong>Медицинские ассоциации:</strong>
-                    <ul>
-                        {props.medicalAssociations.map((association, index) => (
-                            <li key={index}>{association}</li>
-                        ))}
-                    </ul>
-                </div>
-
-                {/* Добавьте информацию о профиле лечения */}
-                <div>
-                    <strong>Профиль лечения:</strong>
-                    <ul>
-                        {props.treatmentProfile.map((treatment, index) => (
-                            <li key={index}>{treatment}</li>
-                        ))}
-                    </ul>
-                </div>
-
-                {/* Добавьте образование */}
-                <div>
-                    <strong>Образование:</strong>
-                    <ul>
-                        {props.education.map((edu, index) => (
-                            <li key={index}>
-                                {edu.year} - {edu.institution}, {edu.degree}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                {/* Добавьте опыт работы */}
-                <div>
-                    <strong>Опыт работы:</strong>
-                    <ul>
-                        {props.workExperience.map((experience, index) => (
-                            <li key={index}>
-                                {experience.year} - {experience.position}, {experience.organization}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
             </div>
         </CardDoctorsContainer>
     );

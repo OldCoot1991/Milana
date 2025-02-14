@@ -63,8 +63,8 @@ export const ViewArrayListCardDoctor = [
   },
   {
     key: "Исхак",
-    name: `Исхак Люай Нихад`,
-    profile: "Врач флеболог",
+    name: `Исхак Люай Нихад `,
+    profile: "Врач флеболог ",
     image: "ishak",
     internship: "5 лет",
     medicalAssociations: ["Кандидат медицинских наук"],
@@ -117,6 +117,20 @@ export const ViewArrayListCardDoctor = [
         organization: "Городская больница 3, г. Краснодар",
       },
     ],
+  },
+  {
+    key: "Морзиев",
+    name: "Морзиев Бекхан Амирович",
+    profile: "Сосудистый хирург (ангиохирург), флеболог",
+    image: "bekhan",
+    internship: "5 лет",
+  },
+  {
+    key: "Морзиев",
+    name: "Морзиев Бекхан Амирович",
+    profile: "Сосудистый хирург (ангиохирург), флеболог",
+    image: "bekhan",
+    internship: "5 лет",
   },
   {
     key: "Морзиев",

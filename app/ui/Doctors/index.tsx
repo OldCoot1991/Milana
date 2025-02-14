@@ -27,13 +27,14 @@ const CardDoctorsContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  width: calc(380px + (438 - 380) * ((100vw - 1024px) / (1920 - 1024)));
   text-align: center;
-  @media (max-width: 1024px) {
-    width: calc(290px + (380 - 290) * ((100vw - 768px) / (1024 - 768)));
+  margin-left:120px;
+  @media (max-width: 1920px) {
+    margin-left: 0px;
   }
-  @media (max-width: 768px) {
-    height: 100%;
+  @media (max-width: 600px) {
+    width: 100%;
+margin: 0 auto;
   }
 `;
 

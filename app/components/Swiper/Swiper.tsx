@@ -33,7 +33,7 @@ export default function SwiperComponents() {
     <div className="container-swiper">
       <Swiper
         ref={swiperRef}
-        slidesPerView={3}
+        slidesPerView={3} // Задается значение по умолчанию
         spaceBetween={0}
         loop={true}
         pagination={{
@@ -45,6 +45,19 @@ export default function SwiperComponents() {
         }}
         modules={[Pagination, Navigation]}
         className="mySwiper"
+        breakpoints={{
+          // Адаптивные настройки
+          1324: {
+            slidesPerView: 3,
+          },
+          600: {
+            slidesPerView: 2,
+          },
+          // Когда ширина экрана меньше 768 пикселей
+          0: {
+            slidesPerView: 1,
+          },
+        }}
       >
         {ViewArrayListCardDoctor.map((doctor, index) => (
           <SwiperSlide key={index}>
@@ -85,8 +98,9 @@ export default function SwiperComponents() {
           medicalAssociations={selectedDoctor.medicalAssociations || []} // значение по умолчанию
           treatmentProfile={selectedDoctor.treatmentProfile || []} // значение по умолчанию
           education={selectedDoctor.education || []} // значение по умолчанию
-          workExperience={selectedDoctor.workExperience || []} // значение по умолчан
-          classImage={""}        />
+          workExperience={selectedDoctor.workExperience || []} // значение по умолчанию
+          classImage={""}
+        />
       )}
     </div>
   );
