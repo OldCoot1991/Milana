@@ -5,12 +5,14 @@ import { Container, ContainerDoctors } from "./ui/Doctors";
 import TitleSelection from "./ui/TitleSelection";
 import IFrame from "./ui/Address/IframeMaip";
 import SwiperComponents from "./components/Swiper/Swiper";
+import News from "./components/News/News";
 
 export default function IndexPage() {
   return (
     <div>
       <Banner />
       <MainTopAboutUse />
+      <News />
       <Container>
         <TitleSelection text={"Услуги"} />
         <TitleSelection text={"Врачи клиники «Док.Варикоз»"} />

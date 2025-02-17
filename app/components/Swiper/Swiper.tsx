@@ -40,8 +40,8 @@ export default function SwiperComponents() {
           clickable: true,
         }}
         navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next-1",
+          prevEl: ".swiper-button-prev-1",
         }}
         modules={[Pagination, Navigation]}
         className="mySwiper"
@@ -77,13 +77,13 @@ export default function SwiperComponents() {
       </Swiper>
       <button
         onClick={() => swiperRef.current?.slidePrev()}
-        className="swiper-button-prev"
+        className="swiper-button-prev-1"
       >
         {"<"}
       </button>
       <button
         onClick={() => swiperRef.current?.slideNext()}
-        className="swiper-button-next"
+        className="swiper-button-next-1"
       >
         {">"}
       </button>

@@ -28,7 +28,6 @@ const CardDoctorsContainer = styled.div`
   align-items: center;
   margin-top: 20px;
   text-align: center;
-  margin-left:120px;
   @media (max-width: 1920px) {
     margin-left: 0px;
   }
