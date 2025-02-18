@@ -33,25 +33,32 @@ const CardDoctorsContainer = styled.div`
   }
   @media (max-width: 600px) {
     width: 100%;
-margin: 0 auto;
+    margin: 0 auto;
   }
 `;
 
 const CardDoctorsName = styled.p`
-  font-size: calc(26px + (32 - 26) * ((100vw - 1024px) / (1920 - 1024)));
+  font-size: calc(32px + (32 - 32) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 120%;
   width: 100%;
   text-align: center;
   @media (max-width: 1024px) {
-    font-size: calc(22px + (26 - 22) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(24px + (32 - 24) * ((100vw - 768px) / (1024 - 768)));
+  }
+  @media (max-width: 768px) {
+    font-size: 24px;
+    width: 80%;
   }
 `;
 
 const CardDoctorsProfile = styled.span`
-  font-size: calc(20px + (24 - 20) * ((100vw - 1024px) / (1920 - 1024)));
+  font-size: calc(24px + (24 - 24) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 120%;
   @media (max-width: 1024px) {
-    font-size: calc(18px + (20 - 18) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(20px + (24 - 20) * ((100vw - 768px) / (1024 - 768)));
+  }
+  @media (max-width: 768px) {
+    font-size: 20px;
   }
 `;
 
@@ -62,7 +69,6 @@ const CardDoctorsImageDiv = styled.div`
 `;
 
 // Стили для модального окна и фона
-
 
 const ViewDoctorsContainer = styled.div`
   position: fixed;

@@ -140,31 +140,27 @@ a {
 }
 
 .container-doc {
-  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (max-width: 768px) {
-    height: calc(70px + (90 - 70) * ((100vw - 360px) / (768 - 360)));
-  }
 }
 
 @media (max-width: 1024px) {
   .milana {
-    width: calc(260px + (338 - 260) * ((100vw - 768px) / (1024 - 768)));
-    height: calc(330px + (421 - 330) * ((100vw - 768px) / (1024 - 768)));
+    width: calc(310px + (338 - 310) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(370px + (421 - 370) * ((100vw - 768px) / (1024 - 768)));
     border-radius: 20px;
     box-shadow: 15px 15px 0px 0px rgba(129, 229, 239, 1);
   }
   .ishak {
-    width: calc(260px + (338 - 260) * ((100vw - 768px) / (1024 - 768)));
-    height: calc(330px + (421 - 330) * ((100vw - 768px) / (1024 - 768)));
+    width: calc(310px + (338 - 310) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(370px + (421 - 370) * ((100vw - 768px) / (1024 - 768)));
     border-radius: 20px;
     box-shadow: 15px 15px 0px 0px rgba(129, 229, 239, 1);
   }
   .bekhan {
-    width: calc(260px + (338 - 260) * ((100vw - 768px) / (1024 - 768)));
-    height: calc(330px + (421 - 330) * ((100vw - 768px) / (1024 - 768)));
+    width: calc(310px + (338 - 310) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(370px + (421 - 370) * ((100vw - 768px) / (1024 - 768)));
     border-radius: 20px;
     box-shadow: 15px 15px 0px 0px rgba(129, 229, 239, 1);
   }
