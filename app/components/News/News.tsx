@@ -16,7 +16,7 @@ export default function News() {
 
   return (
     <div className={styles.news}>
-      <h1 className={styles["title_con  tent"]}>Новости и акции</h1>
+      <h1 className={styles["title_content"]}>Новости и акции</h1>
       <Swiper
         ref={swiperRef}
         slidesPerView={3} // Задается значение по умолчанию
@@ -45,28 +45,28 @@ export default function News() {
         <SwiperSlide>
           <div className={styles.container}>
             <Image className={styles.image} src={Img1} alt={""} />
-            <p> Новости</p>
-            <h1 className="">
+            <p className={styles["text"]}> Новости</p>
+            <h1 className={styles["title-card"]}>
               Лазерное лечение варикоза стало еще эффективнее!
             </h1>
             <span className={styles.date}>11 марта 2024</span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles.container}>
+        <div className={styles.container}>
             <Image className={styles.image} src={Img1} alt={""} />
-            <p> Новости</p>
-            <h1 className="">
+            <p className={styles["text"]}> Новости</p>
+            <h1 className={styles["title-card"]}>
               Лазерное лечение варикоза стало еще эффективнее!
             </h1>
             <span className={styles.date}>11 марта 2024</span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles.container}>
+        <div className={styles.container}>
             <Image className={styles.image} src={Img1} alt={""} />
-            <p> Новости</p>
-            <h1 className="">
+            <p className={styles["text"]}> Новости</p>
+            <h1 className={styles["title-card"]}>
               Лазерное лечение варикоза стало еще эффективнее!
             </h1>
             <span className={styles.date}>11 марта 2024</span>
