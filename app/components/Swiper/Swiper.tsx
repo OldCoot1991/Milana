@@ -36,9 +36,6 @@ export default function SwiperComponents() {
         slidesPerView={3} // Задается значение по умолчанию
         spaceBetween={0}
         loop={true}
-        pagination={{
-          clickable: true,
-        }}
         navigation={{
           nextEl: ".swiper-button-next-1",
           prevEl: ".swiper-button-prev-1",
@@ -67,26 +64,28 @@ export default function SwiperComponents() {
               onClick={() => handleCardClick(doctor.key)}
               profile={doctor.profile}
               classImage={doctor.image}
-              medicalAssociations={doctor.medicalAssociations || []} // значение по умолчанию
-              treatmentProfile={doctor.treatmentProfile || []} // значение по умолчанию
-              education={doctor.education || []} // значение по умолчанию
-              workExperience={doctor.workExperience || []} // значение по умолчанию
+              medicalAssociations={doctor.medicalAssociations || []}
+              treatmentProfile={doctor.treatmentProfile || []}
+              education={doctor.education || []}
+              workExperience={doctor.workExperience || []}
             />
           </SwiperSlide>
         ))}
       </Swiper>
-      <button
-        onClick={() => swiperRef.current?.slidePrev()}
-        className="swiper-button-prev-1"
-      >
-        {"<"}
-      </button>
-      <button
-        onClick={() => swiperRef.current?.slideNext()}
-        className="swiper-button-next-1"
-      >
-        {">"}
-      </button>
+      <div className="container_pagination">
+        <button
+          onClick={() => swiperRef.current?.slidePrev()}
+          className="swiper-button-prev-1"
+        >
+          {""}
+        </button>
+        <button
+          onClick={() => swiperRef.current?.slideNext()}
+          className="swiper-button-next-1"
+        >
+          {""}
+        </button>
+      </div>
       {isVisible && selectedDoctor && (
         <ViewDoctorsContainerComponents
           key={selectedDoctor.key}

@@ -116,6 +116,7 @@ a {
   background-size: cover;
   border-radius: 40px;
   background-position: center;
+  box-shadow: 20px 20px 0px 0px rgba(129, 229, 239, 1);
 }
 
 .ishak {
@@ -125,6 +126,7 @@ a {
   background-size: cover;
   border-radius: 40px;
   background-position: center;
+  box-shadow: 20px 20px 0px 0px rgba(129, 229, 239, 1);
 }
 
 .bekhan {
@@ -134,6 +136,7 @@ a {
   background-size: cover;
   border-radius: 40px;
   background-position: center;
+  box-shadow: 20px 20px 0px 0px rgba(129, 229, 239, 1);
 }
 
 .container-doc {
@@ -141,6 +144,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 768px) {
+    height: calc(70px + (90 - 70) * ((100vw - 360px) / (768 - 360)));
+  }
 }
 
 @media (max-width: 1024px) {
@@ -148,28 +154,34 @@ a {
     width: calc(260px + (338 - 260) * ((100vw - 768px) / (1024 - 768)));
     height: calc(330px + (421 - 330) * ((100vw - 768px) / (1024 - 768)));
     border-radius: 20px;
+    box-shadow: 15px 15px 0px 0px rgba(129, 229, 239, 1);
   }
   .ishak {
     width: calc(260px + (338 - 260) * ((100vw - 768px) / (1024 - 768)));
     height: calc(330px + (421 - 330) * ((100vw - 768px) / (1024 - 768)));
     border-radius: 20px;
+    box-shadow: 15px 15px 0px 0px rgba(129, 229, 239, 1);
   }
   .bekhan {
     width: calc(260px + (338 - 260) * ((100vw - 768px) / (1024 - 768)));
     height: calc(330px + (421 - 330) * ((100vw - 768px) / (1024 - 768)));
     border-radius: 20px;
+    box-shadow: 15px 15px 0px 0px rgba(129, 229, 239, 1);
   }
 }
 
 @media (max-width: 900px) {
   .milana {
     margin: 0 auto;
+    box-shadow: 12px 12px 0px 0px rgba(129, 229, 239, 1);
   }
   .ishak {
     margin: 0 auto;
+    box-shadow: 12px 12px 0px 0px rgba(129, 229, 239, 1);
   }
   .bekhan {
     margin: 0 auto;
+    box-shadow: 12px 12px 0px 0px rgba(129, 229, 239, 1);
   }
 }
 
@@ -235,7 +247,6 @@ a {
   width: 100%;
 }
 
-
 .container-swiper {
   position: relative;
   z-index: 8888;
@@ -247,10 +258,8 @@ a {
 }
 
 .mySwiper {
-  
 }
 .swiper-wrapper {
-
 }
 .swiper {
   height: 100%;
@@ -259,74 +268,15 @@ a {
   @media (max-width: 600px) {
     width: 100%;
   }
-
 }
-
-
-
-
-
-/* .swiper-button-prev {
-  font-size: 0px;
-  background-color: transparent;
-  border: 0px;
-  position: relative;
-  z-index: 1 !important;
-  left: 0px !important;
-  color: rgb(3, 50, 52) !important;
-  @media (max-width: 600px) {
-    z-index: 9999999 !important;
-  }
-}
-
-.swiper-button-next {
-  font-size: 0px;
-  background-color: transparent;
-  border: 0px;
-  position: relative;
-  z-index: 1 !important;
-  color: rgb(3, 50, 52) !important;
-  @media (max-width: 600px) {
-    z-index: 9999999 !important;
-  }
-} */
 
 .swiper-horizontal {
   background-color: transparent;
   border: 0px;
   position: relative !important;
-  @media (min-width: 768px) {
-    height: calc(650px + (740 - 650) * ((100vw - 768px) / (1400 - 768)));
-  }
+  height: min-content;
 }
 
-.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: var(--swiper-pagination-bottom, 0px) !important;
-  top: var(--swiper-pagination-top, auto);
-  left: 0;
-  width: 100%;
-}
-
-.swiper-slide {
-  flex-shrink: 0;
-  width: 100%;
-  height: min-content !important;
-  position: relative;
-  transition-property: transform;
-  display: block;
-}
-
-.swiper-wrapper {
-  position: relative;
-  width: min-content !important;
-  height: min-content !important;
-  z-index: 1;
-  display: flex
-;
-  transition-property: transform;
-  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
-  box-sizing: content-box;
-}
 .swiper-button-prev-1 {
   width: 80px;
   height: 80px;
@@ -336,30 +286,104 @@ a {
   font-size: 0px;
   color: white;
   background-size: cover;
-  } 
-  .swiper-button-next-1 {
-      width: 80px;
-      height: 80px;
-      border-radius: 100%;
-      font-size: 0px;
-      border: none;
-      background-image: url(./components/News/right.png);
-      font-size: 0px;
-      color: white;
-      background-size: cover;
+  @media (max-width: 1024px) {
+    width: 70px;
+    height: 70px;
   }
-
-  .container_pagination {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    position: absolute;
+  @media (max-width: 1024px) {
+    width: 60px;
+    height: 60px;
   }
-
-  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-    content: '' !important;
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+.swiper-button-next-1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  font-size: 0px;
+  border: none;
+  background-image: url(./components/News/right.png);
+  font-size: 0px;
+  color: white;
+  background-size: cover;
+  @media (max-width: 1024px) {
+    width: 70px;
+    height: 70px;
+  }
+  @media (max-width: 1024px) {
+    width: 60px;
+    height: 60px;
+  }
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-  content: '' !important;
+.container_pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 20px auto;
+  @media (max-width: 768px) {
+    margin: 10px auto;
+    margin-bottom: 20px;
+  }
+}
+
+.container-swiper {
+  display: flex;
+  flex-direction: column;
+}
+.swiper-button-prev-2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: none;
+  background-image: url(./components/News/left.png);
+  font-size: 0px;
+  color: white;
+  background-size: cover;
+  @media (max-width: 1024px) {
+    width: 70px;
+    height: 70px;
+  }
+  @media (max-width: 1024px) {
+    width: 60px;
+    height: 60px;
+  }
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+.swiper-button-next-2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  font-size: 0px;
+  border: none;
+  background-image: url(./components/News/right.png);
+  font-size: 0px;
+  color: white;
+  background-size: cover;
+  @media (max-width: 1024px) {
+    width: 70px;
+    height: 70px;
+  }
+  @media (max-width: 1024px) {
+    width: 60px;
+    height: 60px;
+  }
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.swiper {
+  width: 100% !important;
 }

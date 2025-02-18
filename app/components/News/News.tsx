@@ -16,15 +16,15 @@ export default function News() {
 
   return (
     <div className={styles.news}>
-      <h1 className={styles["title_content"]}>Новости и акции</h1>
+      <h1 className={styles["title_con  tent"]}>Новости и акции</h1>
       <Swiper
         ref={swiperRef}
         slidesPerView={3} // Задается значение по умолчанию
         spaceBetween={0}
         loop={true}
         navigation={{
-          nextEl: ".swiper-button-next-1",
-          prevEl: ".swiper-button-prev-1",
+          nextEl: ".swiper-button-next-2",
+          prevEl: ".swiper-button-prev-2",
         }}
         modules={[Pagination, Navigation]}
         className={styles.mySwiper}
@@ -76,13 +76,13 @@ export default function News() {
       <div className="container_pagination">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
-          className="swiper-button-prev-1"
+          className="swiper-button-prev-2"
         >
           {""}
         </button>
         <button
           onClick={() => swiperRef.current?.slideNext()}
-          className="swiper-button-next-1"
+          className="swiper-button-next-2"
         >
           {""}
         </button>

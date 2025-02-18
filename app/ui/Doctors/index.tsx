@@ -40,7 +40,7 @@ margin: 0 auto;
 const CardDoctorsName = styled.p`
   font-size: calc(26px + (32 - 26) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 120%;
-  width: 80%;
+  width: 100%;
   text-align: center;
   @media (max-width: 1024px) {
     font-size: calc(22px + (26 - 22) * ((100vw - 768px) / (1024 - 768)));
