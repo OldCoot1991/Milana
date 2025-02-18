@@ -47,7 +47,7 @@ export default function SwiperComponents() {
           1324: {
             slidesPerView: 3,
           },
-          600: {
+          680: {
             slidesPerView: 2,
           },
           // Когда ширина экрана меньше 768 пикселей
