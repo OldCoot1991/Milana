@@ -14,22 +14,21 @@
   text-align: center;
   margin: 0;
   padding: 40px 0px;
+}
 
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+  .title_content {
     font-size: calc(48px + (64 - 48) * ((100vw - 768px) / (1024 - 768)));
   }
+}
 
-  @media (max-width: 1024px) {
-    font-size: calc(48px + (64 - 48) * ((100vw - 768px) / (1024 - 768)));
-  }
-
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .title_content {
     font-size: calc(32px + (48 - 32) * ((100vw - 360px) / (768 - 360)));
     padding-top: calc(20px + (40 - 20) * ((100vw - 360px) / (768 - 360)));
     padding-bottom: calc(20px + (40 - 20) * ((100vw - 360px) / (768 - 360)));
   }
 }
-
 .container {
   background-color: rgba(13, 176, 184, 0.3);
   display: flex;
@@ -38,28 +37,45 @@
   width: calc(460px + (500 - 460) * ((100vw - 1024px) / (1920 - 1024)));
   border-radius: 40px;
   margin: 0 auto;
-  @media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
+  .container {
     width: calc(314px + (460 - 314) * ((100vw - 768px) / (1024 - 768)));
     border-radius: 30px;
   }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .container {
     width: calc(314px + (314 - 314) * ((100vw - 360px) / (768 - 360)));
     border-radius: 20px;
   }
 }
-
+@media (max-width: 360px) {
+  .container {
+    width: 314px;
+    border-radius: 20px;
+  }
+}
 .image {
   width: calc(460px + (500 - 460) * ((100vw - 1024px) / (1920 - 1024)));
   height: calc(340px + (340 - 340) * ((100vw - 1024px) / (1920 - 1024)));
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  @media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
+  .image {
     width: calc(314px + (460 - 314) * ((100vw - 768px) / (1024 - 768)));
     height: calc(226px + (340 - 226) * ((100vw - 768px) / (1024 - 768)));
     border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+    border-top-right-radius: 30px;
   }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .image {
     width: calc(314px + (314 - 314) * ((100vw - 360px) / (768 - 360)));
     height: calc(226px + (226 - 226) * ((100vw - 360px) / (768 - 360)));
     border-top-left-radius: 20px;
