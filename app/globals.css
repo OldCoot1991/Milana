@@ -286,18 +286,6 @@ a {
   font-size: 0px;
   color: white;
   background-size: cover;
-  @media (max-width: 1024px) {
-    width: 70px;
-    height: 70px;
-  }
-  @media (max-width: 768px) {
-    width: 60px;
-    height: 60px;
-  }
-  @media (max-width: 360px) {
-    width: 40px;
-    height: 40px;
-  }
 }
 .swiper-button-next-1 {
   width: 80px;
@@ -309,15 +297,58 @@ a {
   font-size: 0px;
   color: white;
   background-size: cover;
-  @media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
+  .swiper-button-next-1 {
     width: 70px;
     height: 70px;
   }
-  @media (max-width: 768px) {
+  .swiper-button-prev-1 {
+    width: 70px;
+    height: 70px;
+  }
+  .swiper-button-next-2 {
+    width: 70px;
+    height: 70px;
+  }
+  .swiper-button-prev-2 {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .swiper-button-next-1 {
     width: 60px;
     height: 60px;
   }
-  @media (max-width: 360px) {
+  .swiper-button-prev-1 {
+    width: 60px;
+    height: 60px;
+  }
+  .swiper-button-next-2 {
+    width: 60px;
+    height: 60px;
+  }
+  .swiper-button-prev-2 {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 360px) {
+  .swiper-button-next-1 {
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-button-prev-1 {
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-button-next-2 {
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-button-prev-2 {
     width: 40px;
     height: 40px;
   }
@@ -347,18 +378,6 @@ a {
   font-size: 0px;
   color: white;
   background-size: cover;
-  @media (max-width: 1024px) {
-    width: 70px;
-    height: 70px;
-  }
-  @media (max-width: 768px) {
-    width: 60px;
-    height: 60px;
-  }
-  @media (max-width: 360px) {
-    width: 40px;
-    height: 40px;
-  }
 }
 .swiper-button-next-2 {
   width: 80px;
@@ -370,18 +389,6 @@ a {
   font-size: 0px;
   color: white;
   background-size: cover;
-  @media (max-width: 1024px) {
-    width: 70px;
-    height: 70px;
-  }
-  @media (max-width: 768px) {
-    width: 60px;
-    height: 60px;
-  }
-  @media (max-width: 360px) {
-    width: 40px;
-    height: 40px;
-  }
 }
 
 .swiper {
