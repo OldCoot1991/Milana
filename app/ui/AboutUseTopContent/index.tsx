@@ -27,9 +27,15 @@ const ContainerAboutUseContentBottom = styled.div`
     padding: 20px;
   }
   @media (max-width: 1010px) {
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 50px;
+  }
+  @media (max-width: 880px) {
     flex-direction: column-reverse;
     gap: 40px;
     margin-top: 50px;
+    padding: 0;
   }
 `;
 const ContainerContentAboutUse = styled.div`
@@ -40,13 +46,21 @@ const ContainerContentAboutUse = styled.div`
   width: 100%;
   margin: 0 auto;
   margin-bottom: calc(100px + (150 - 100) * ((100vw - 1024px) / (1920 - 1024)));
+  @media (max-width: 880px) {
+    padding: 0 20px;
+  }
 `;
 
 const Container = styled.div`
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
+  @media (max-width: 880px) {
+    padding: 0px;
+  }
 `;
+
+
 
 const ContainerTextAboutUse = styled.div`
   display: flex;

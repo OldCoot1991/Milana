@@ -85,20 +85,36 @@ a {
 }
 
 .img1 {
-  background-image: url(./ui/AboutUse/image/1.png);
+  background-image: url(./ui/AboutUse/image/1.svg);
   background-size: cover;
+  width: calc(140px + (140 - 140) * ((100vw - 1024px) / (1920 - 1024)));
 }
 
 .img2 {
-  background-image: url(./ui/AboutUse/image/2.png);
+  background-image: url(./ui/AboutUse/image/2.svg);
   background-size: cover;
+  width: calc(140px + (140 - 140) * ((100vw - 1024px) / (1920 - 1024)));
 }
 
 .img3 {
-  background-image: url(./ui/AboutUse/image/3.png);
+  background-image: url(./ui/AboutUse/image/3.svg);
   background-size: cover;
+  width: calc(140px + (140 - 140) * ((100vw - 1024px) / (1920 - 1024)));
 }
 
+@media (max-width: 1024px) {
+  .img1 {
+    width: calc(91px + (140 - 91) * ((100vw - 768px) / (1024 - 768)));
+  }
+  
+  .img2 {
+    width: calc(91px + (140 - 91) * ((100vw - 768px) / (1024 - 768)));
+  }
+  
+  .img3 {
+    width: calc(91px + (140 - 91) * ((100vw - 768px) / (1920 - 768)));
+  }
+}
 .MainAboutUse_Logo {
   background-image: url(./ui/mainAboutUse/image/Logo.svg);
   background-size: cover;
@@ -179,8 +195,17 @@ a {
     margin: 0 auto;
     box-shadow: 12px 12px 0px 0px rgba(129, 229, 239, 1);
   }
+  .bg-about-use-Bottom-content {
+    box-shadow: 12px 12px 0px 0px rgba(129, 229, 239, 1);
+  }
 }
 
+.bg-about-use-top-content {
+  box-shadow: 20px -20px 0px 0px rgba(129, 229, 239, 1);
+}
+.bg-about-use-Bottom-content {
+  box-shadow: 20px -20px 0px 0px rgba(129, 229, 239, 1);
+}
 .buttton-close {
   background-color: transparent;
   border-color: transparent;
@@ -389,4 +414,53 @@ a {
 
 .swiper {
   width: 100% !important;
+}
+
+.container-about-use-bottom-image {
+  display: flex;
+  width: min-content;
+  margin: 0 auto;
+  gap: 10px
+}
+
+.container-about-use-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sub_container-about-use {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.image-about-use-1 {
+  width: calc(507px + (940 - 507) * ((100vw - 1024px) / (1920 - 1024)));
+  height: calc(507px + (940 - 507) * ((100vw - 1024px) / (1920 - 1024)));
+}
+.image-about-use-2 {
+  width: calc(248px + (465 - 248) * ((100vw - 1024px) / (1920 - 1024)));
+  height: calc(248px + (465 - 248) * ((100vw - 1024px) / (1920 - 1024)));
+}
+
+@media (max-width: 601px) {
+  .container-about-use-bottom-image {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-top: 150px;
+  }
+  .image-about-use-1 {
+    width: 100%;
+    height:  100%;
+  }
+  .image-about-use-2 {
+    width: 49%;
+    height: 100%;
+  }
+  .sub_container-about-use {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    justify-content: space-between;
+  }
 }

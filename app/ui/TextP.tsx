@@ -21,10 +21,9 @@ export default TextP;
 const TextStyled = styled.p<{ textAlign: string }>` // Добавляем типизацию для текстового выравнивания
   color: var(--text-dark);
   font-size: calc(24px + (24 - 24) * ((100vw - 1024px) / (1920 - 1024)));
-  line-height: 100%;
   line-height: 120%;
   text-align: ${({ textAlign }) => textAlign}; // Используем переданное значение для text-align
-
+  margin-top: 0;
   @media (max-width: 1024px) {
     font-size: calc(20px + (24 - 20) * ((100vw - 768px) / (1024 - 768)));
   }

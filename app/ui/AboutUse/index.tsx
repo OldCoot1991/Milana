@@ -18,14 +18,16 @@ const TitleAboutUseCard = styled.p`
 const ContainerAboutUse = styled.div`
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   justify-content: space-between;
+  gap: 20px;
   margin-top: 100px;
   @media (max-width: 768px) {
     margin: 0 auto;
     margin-top: 50px;
-    justify-content: center;
+  }
+  @media (max-width: 610px) {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -33,7 +35,6 @@ const ContainerCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
   width: calc(239px + (339 - 239) * ((100vw - 1024px) / (1920 - 1024)));
   @media (max-width: 1030px) {
     width: calc(268px + (339 - 268) * ((100vw - 768px) / (1024 - 768)));
