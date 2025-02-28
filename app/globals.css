@@ -545,7 +545,8 @@ a {
 @media (max-width: 768px) {
   .container-card-documents {
     width: calc(320px + (314 - 320)*((100vw - 360px) /(768 - 360)));
-    height: 368px;
+    height: calc(310px + (368 - 310)*((100vw - 360px) /(768 - 360)));
+    padding: 25px 10px;
   }
   .document-image {
     height: 110px;
@@ -563,6 +564,9 @@ a {
 }
 
 @media (max-width: 700px) {
+  .container-card-documents {
+    
+  }
   .container-card-documents-global {
     flex-direction: column;
   }
