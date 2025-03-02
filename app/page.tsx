@@ -15,6 +15,62 @@ export default function IndexPage() {
       <News />
       <Container>
         <TitleSelection text={"Услуги"} />
+        <div className="main_services">
+          <div className="flebologia">
+            <h3 className="flebologia__text Manrope-Medium">Флебология</h3>
+            <ul className="flebologia__list">
+              <li className="Manrope-Regular">
+                Комплексная диагностика вен ( прием сосудистого хирурга +узи вен
+                обеих нижних конечностей ) – 3 000 ₽
+              </li>
+              <li className="Manrope-Regular">
+                Повторный прием сосудистого хирурга 1000 ₽
+              </li>
+              <li className="Manrope-Regular">
+                Второе мнение (при наличии узи и заключения от другого доктора
+                не позднее 3 месяцев)- бесплатно.
+              </li>
+              <li className="Manrope-Regular">
+                Склеротерапия 8 000 ₽ - 1 сеанс
+              </li>
+              <li className="Manrope-Regular">
+                Курс склеротерапии из 4 сеансов – 28 900 ₽
+              </li>
+              <li className="Manrope-Regular">
+                Эндовенозная лазерная коагуляция 1 ствола подкожной вены 34 900
+                ₽
+              </li>
+              <li className="Manrope-Regular">
+                Эндовенозная лазерная коагуляция 2 стволов подкожных вен 49 900
+                ₽
+              </li>
+              <li className="Manrope-Regular">
+                Тотал ЭВЛК 1 конечности 49 900 ₽
+              </li>
+              <li className="Manrope-Regular">Минифлебэктомия 15 900 ₽</li>
+            </ul>
+          </div>
+          <div className="service_psichologii_and_allergy">
+            <div className="container_1">
+              <h3 className="flebologia__text Manrope-Medium">Психиатрия</h3>
+              <ul className="flebologia__list">
+                <li className="Manrope-Regular">
+                  Прием врача психиатра 5 000 ₽
+                </li>
+              </ul>
+            </div>
+            <div className="container_2 ">
+              <h3 className="flebologia__text Manrope-Medium">
+                Аллергология - иммунология, пульмонология
+              </h3>
+              <ul className="flebologia__list">
+                <li className="Manrope-Regular">
+                  Прием врача пульмонолога, аллерголога- иммунолога – 5 000 ₽
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <TitleSelection text={"Врачи клиники «Док.Варикоз»"} />
         <SwiperComponents />
         <TitleSelection text={"Адрес и контакты"} />

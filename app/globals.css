@@ -11,7 +11,7 @@ body {
   height: 100svh;
   padding: 0;
   margin: 0;
-  background: #f5f4f2;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,6 +40,7 @@ a {
   font-family: "Manrope";
   font-weight: 400;
 }
+
 .Manrope-Medium {
   font-family: "Manrope";
   font-weight: 500;
@@ -71,10 +72,12 @@ a {
     background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_mobail_3.png);
   }
 }
+
 @media (max-width: 1024px) {
   .MainTopAboutUse_img_1 {
     background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_mobail_1.png);
   }
+
   .MainTopAboutUse_img_2 {
     background-image: url(./ui/mainAboutUse/image/mainAboutUseImage_mobail_2.png);
   }
@@ -115,6 +118,7 @@ a {
     width: calc(91px + (140 - 91) * ((100vw - 768px) / (1920 - 768)));
   }
 }
+
 .MainAboutUse_Logo {
   background-image: url(./ui/mainAboutUse/image/Logo.svg);
   background-size: cover;
@@ -168,12 +172,14 @@ a {
     border-radius: 20px;
     box-shadow: 15px 15px 0px 0px rgba(129, 229, 239, 1);
   }
+
   .ishak {
     width: calc(310px + (338 - 310) * ((100vw - 768px) / (1024 - 768)));
     height: calc(370px + (421 - 370) * ((100vw - 768px) / (1024 - 768)));
     border-radius: 20px;
     box-shadow: 15px 15px 0px 0px rgba(129, 229, 239, 1);
   }
+
   .bekhan {
     width: calc(310px + (338 - 310) * ((100vw - 768px) / (1024 - 768)));
     height: calc(370px + (421 - 370) * ((100vw - 768px) / (1024 - 768)));
@@ -187,14 +193,17 @@ a {
     margin: 0 auto;
     box-shadow: 12px 12px 0px 0px rgba(129, 229, 239, 1);
   }
+
   .ishak {
     margin: 0 auto;
     box-shadow: 12px 12px 0px 0px rgba(129, 229, 239, 1);
   }
+
   .bekhan {
     margin: 0 auto;
     box-shadow: 12px 12px 0px 0px rgba(129, 229, 239, 1);
   }
+
   .bg-about-use-Bottom-content {
     box-shadow: 12px 12px 0px 0px rgba(129, 229, 239, 1);
   }
@@ -203,9 +212,11 @@ a {
 .bg-about-use-top-content {
   box-shadow: 20px -20px 0px 0px rgba(129, 229, 239, 1);
 }
+
 .bg-about-use-Bottom-content {
   box-shadow: 20px -20px 0px 0px rgba(129, 229, 239, 1);
 }
+
 .buttton-close {
   background-color: transparent;
   border-color: transparent;
@@ -280,12 +291,15 @@ a {
 
 .mySwiper {
 }
+
 .swiper-wrapper {
 }
+
 .swiper {
   height: 100%;
   width: 90%;
   cursor: pointer;
+
   @media (max-width: 600px) {
     width: 100%;
   }
@@ -308,6 +322,7 @@ a {
   color: white;
   background-size: cover;
 }
+
 .swiper-button-next-1 {
   width: 80px;
   height: 80px;
@@ -319,6 +334,7 @@ a {
   color: white;
   background-size: cover;
 }
+
 .swiper-button-prev-2 {
   width: 80px;
   height: 80px;
@@ -329,6 +345,7 @@ a {
   color: white;
   background-size: cover;
 }
+
 .swiper-button-next-2 {
   width: 80px;
   height: 80px;
@@ -346,50 +363,61 @@ a {
     width: 70px;
     height: 70px;
   }
+
   .swiper-button-prev-1 {
     width: 70px;
     height: 70px;
   }
+
   .swiper-button-next-2 {
     width: 70px;
     height: 70px;
   }
+
   .swiper-button-prev-2 {
     width: 70px;
     height: 70px;
   }
 }
+
 @media (max-width: 768px) {
   .swiper-button-next-1 {
     width: 60px;
     height: 60px;
   }
+
   .swiper-button-prev-1 {
     width: 60px;
     height: 60px;
   }
+
   .swiper-button-next-2 {
     width: 60px;
     height: 60px;
   }
+
   .swiper-button-prev-2 {
     width: 60px;
     height: 60px;
   }
 }
+
 @media (max-width: 360px) {
   .swiper-button-next-1 {
     width: 40px;
     height: 40px;
   }
+
   .swiper-button-prev-1 {
     width: 40px;
     height: 40px;
   }
+
   .swiper-button-next-2 {
     width: 40px;
     height: 40px;
   }
+
   .swiper-button-prev-2 {
     width: 40px;
     height: 40px;
@@ -401,6 +429,7 @@ a {
   justify-content: space-between;
   width: 200px;
   margin: 20px auto;
+
   @media (max-width: 768px) {
     margin: 10px auto;
     margin-bottom: 20px;
@@ -434,10 +463,12 @@ a {
   flex-direction: row;
   gap: 10px;
 }
+
 .image-about-use-1 {
   width: calc(507px + (940 - 507) * ((100vw - 1024px) / (1920 - 1024)));
   height: calc(507px + (940 - 507) * ((100vw - 1024px) / (1920 - 1024)));
 }
+
 .image-about-use-2 {
   width: calc(248px + (465 - 248) * ((100vw - 1024px) / (1920 - 1024)));
   height: calc(248px + (465 - 248) * ((100vw - 1024px) / (1920 - 1024)));
@@ -449,14 +480,17 @@ a {
     width: 100%;
     margin-top: 150px;
   }
+
   .image-about-use-1 {
     width: 100%;
     height: 100%;
   }
+
   .image-about-use-2 {
     width: 49%;
     height: 100%;
   }
+
   .sub_container-about-use {
     display: flex;
     flex-direction: row;
@@ -479,8 +513,8 @@ a {
   flex-direction: column;
   background-color: white;
   justify-content: space-between;
-  width: calc(480px + (500 - 480)*((100vw - 1024px) /(1920 - 1024)));
-  height: calc(437px + (610 - 437)*((100vw - 1024px) /(1920 - 1024)));
+  width: calc(480px + (500 - 480) * ((100vw - 1024px) / (1920 - 1024)));
+  height: calc(437px + (610 - 437) * ((100vw - 1024px) / (1920 - 1024)));
   padding: 30px 24px;
   border-radius: 40px;
   box-shadow: 0px 0px 18px 0px rgba(211, 211, 211, 1);
@@ -491,13 +525,14 @@ a {
   height: max-content;
   max-height: 150px;
   height: 100%;
-  font-size: calc(24px + (32 - 24)*((100vw - 1024px) /(1920 - 1024)));
+  font-size: calc(24px + (32 - 24) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 120%;
   letter-spacing: 0%;
 }
+
 .document-image {
-  height: calc(168px + (281 - 168)*((100vw - 1024px) /(1920 - 1024)));
-  width: calc(168px + (281 - 168)*((100vw - 1024px) /(1920 - 1024)));
+  height: calc(168px + (281 - 168) * ((100vw - 1024px) / (1920 - 1024)));
+  width: calc(168px + (281 - 168) * ((100vw - 1024px) / (1920 - 1024)));
   margin: 0 auto;
 }
 
@@ -522,42 +557,49 @@ a {
 }
 
 @media (max-width: 1024px) {
-  
-.container-card-documents {
-  width: calc(314px + (480 - 314)*((100vw - 768px) /(1024 - 768)));
-  height: calc(368px + (437 - 368)*((100vw - 768px) /(1024 - 768)));
-}
+  .container-card-documents {
+    width: calc(314px + (480 - 314) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(368px + (437 - 368) * ((100vw - 768px) / (1024 - 768)));
+  }
+
   .document-image {
-    height: calc(110px + (168 - 110)*((100vw - 768px) /(1024 - 768)));
-    width: calc(110px + (168 - 110)*((100vw - 768px) /(1024 - 768)));
+    height: calc(110px + (168 - 110) * ((100vw - 768px) / (1024 - 768)));
+    width: calc(110px + (168 - 110) * ((100vw - 768px) / (1024 - 768)));
   }
+
   .title-card-documents {
-    font-size: calc(20px + (24 - 20)*((100vw - 768px) /(1024 - 768)));
+    font-size: calc(20px + (24 - 20) * ((100vw - 768px) / (1024 - 768)));
   }
+
   .contact-label {
-    font-size: calc(16px + (20 - 16)*((100vw - 768px) /(1024 - 768)));
+    font-size: calc(16px + (20 - 16) * ((100vw - 768px) / (1024 - 768)));
   }
+
   .contact-link {
-    font-size: calc(16px + (20 - 16)*((100vw - 768px) /(1024 - 768)));
+    font-size: calc(16px + (20 - 16) * ((100vw - 768px) / (1024 - 768)));
   }
 }
 
 @media (max-width: 768px) {
   .container-card-documents {
-    width: calc(320px + (314 - 320)*((100vw - 360px) /(768 - 360)));
-    height: calc(310px + (368 - 310)*((100vw - 360px) /(768 - 360)));
+    width: calc(320px + (314 - 320) * ((100vw - 360px) / (768 - 360)));
+    height: calc(310px + (368 - 310) * ((100vw - 360px) / (768 - 360)));
     padding: 25px 10px;
   }
+
   .document-image {
     height: 110px;
     width: 110px;
   }
+
   .title-card-documents {
     font-size: 20px;
   }
+
   .contact-label {
     font-size: 16px;
   }
+
   .contact-link {
     font-size: 16px;
   }
@@ -565,9 +607,212 @@ a {
 
 @media (max-width: 700px) {
   .container-card-documents {
-    
   }
+
   .container-card-documents-global {
     flex-direction: column;
+  }
+}
+
+.main_services {
+  display: flex;
+  max-width: 1540px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.service_psichologii_and_allergy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flebologia {
+  background-image: url(./container_3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  height: max-content;
+  width: 760px;
+  height: 1287px;
+  width: 100%;
+  border-radius: 40px;
+  background-color: #f4f4f4;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.flebologia__text {
+  font-size: calc(50px + (50 - 50) * ((100vw - 1024px) / (1920 - 1024)));
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin: 0;
+  padding-bottom: 24px;
+}
+.flebologia__list li {
+  font-size: calc(24px + (24 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+  line-height: 120%;
+  letter-spacing: 0px;
+  padding: 4px 0;
+}
+
+.container_1 {
+  width: 760px;
+  height: 390px;
+  background-image: url(./container_1.png);
+  background-size: cover;
+  border-radius: 40px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.container_2 {
+  background-image: url(./container_2.png);
+  width: 760px;
+  height: 877px;
+  background-size: cover;
+  border-radius: 40px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+.flebologia__text {
+  color: rgba(3, 50, 52, 1);
+}
+@media (max-width: 1590px) {
+  .flebologia {
+    width: max-content;
+    border-radius: 40px;
+    width: 90%;
+  }
+  .main_services {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .service_psichologii_and_allergy {
+    gap: 10px;
+  }
+  .container_1 {
+    width: 90%;
+    height: 290px;
+    border-radius: 40px;
+    margin: 0 auto;
+    background-position: center;
+    background-color: #f4f4f4;
+  }
+  
+  .container_2 {
+    width: 90%;
+    height: 577px;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1024px) {
+  .flebologia__list {
+    margin-block-start: 4px;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+  }
+  .flebologia__text {
+    font-size: calc(36px + (50 - 36) * ((100vw - 768px) / (1024 - 768)));
+    padding-bottom: 0px;
+  }
+  .flebologia__list li {
+    font-size: calc(20px + (24 - 20) * ((100vw - 768px) / (1024 - 768)));
+  }
+  .main_services {
+    flex-wrap: wrap;
+    width: min-content;
+  }
+  .container_1 {
+    width: calc(648px + (940 - 648) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(142px + (168 - 142) * ((100vw - 768px) / (1024 - 768)));
+    border-radius: 30px;
+    padding: 20px;
+  }
+  
+  .container_2 {
+    width: calc(648px + (940 - 648) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(218px + (234 - 218) * ((100vw - 768px) / (1024 - 768)));
+    border-radius: 30px;
+    padding: 20px;
+    background-size: 0;
+  }
+  .flebologia {
+    width: calc(648px + (940 - 648) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(1033px + (1163 - 1033) * ((100vw - 768px) / (1024 - 768)));
+    border-radius: 30px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flebologia__text {
+    font-size: calc(24px + (38 - 24) * ((100vw - 360px) / (768 - 360)));
+  }
+  .flebologia__list li {
+    font-size: calc(18px + (20 - 18) * ((100vw - 360px) / (768 - 360)));
+  }
+  .container_1 {
+    width: calc(367px + (648 - 367) * ((100vw - 360px) / (768 - 360)));
+    height: calc(98px + (142 - 98) * ((100vw - 360px) / (768 - 360)));
+    border-radius: 20px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 14px;
+  }
+  
+  .container_2 {
+    width: calc(367px + (648 - 367) * ((100vw - 360px) / (768 - 360)));
+    height: calc(189px + (218 - 189) * ((100vw - 360px) / (768 - 360)));
+    border-radius: 20px;
+    padding: 14px;
+    background-size: 0;
+  }
+  .flebologia {
+    width: calc(367px + (648 - 367) * ((100vw - 360px) / (768 - 360)));
+    height: calc(838px + (1033 - 838) * ((100vw - 360px) / (768 - 360)));
+    border-radius: 20px;
+    padding: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .container_1 {
+    border-radius: 0px;
+  }
+  
+  .container_2 {
+    border-radius: 0px;
+  }
+  .flebologia {
+    border-radius: 0px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .flebologia__text {
+    text-align: center;
+  }
+  .container_1 {
+    border-radius: 10px;
+    padding: 10px 5px;
+  }
+  
+  .container_2 {
+    border-radius: 10px;
+    padding: 10px 5px;
+  }
+  .flebologia {
+    border-radius: 10px;
+    padding: 10px 5px;
   }
 }
