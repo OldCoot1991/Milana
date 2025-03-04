@@ -4,14 +4,14 @@ import { constants } from "buffer";
 import styled from "styled-components";
 
 const Container = styled.div`
-   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
   align-items: center;
   padding-left: calc(50px + (195 - 50) * ((100vw - 1024px) / (1920 - 1024)));
   padding-right: calc(50px + (195 - 50) * ((100vw - 1024px) / (1920 - 1024)));
-  margin-bottom: 250px;
+
   @media (max-width: 1024px) {
     padding-left: calc(40px + (60 - 40) * ((100vw - 768px) / (1024 - 768)));
     padding-right: calc(40px + (60 - 40) * ((100vw - 768px) / (1024 - 768)));
@@ -22,15 +22,15 @@ const Container = styled.div`
   }
 `;
 const ContainerInfo = styled.div`
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: space-between;
- width: 100%;
- gap: 10px;
- @media (max-width: 900px) { 
-  gap: 0px;
- }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  @media (max-width: 900px) {
+    gap: 0px;
+  }
 `;
 
 const ContainerContact = styled.div`

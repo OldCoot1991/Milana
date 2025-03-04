@@ -280,8 +280,8 @@ a {
 }
 
 .container-swiper {
-  position: relative;
-  z-index: 8888;
+  position: static;
+  z-index: 999998888;
   display: flex;
   height: max-content;
   width: 96%;

@@ -19,7 +19,7 @@ export default SubText;
 
 const TextStyled = styled.p`
   color: var(--text-dark);
-  font-size: calc(24px + (24 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+  font-size: calc(24px + (50 - 24) * ((100vw - 1024px) / (1920 - 1024)));
   line-height: 100%;
   text-align: left;
   margin-top: 20px;
