@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-import styled from "styled-components";
 import AddressComponents from "../components/Address";
 import Head from "next/head";
 interface Metadata {
