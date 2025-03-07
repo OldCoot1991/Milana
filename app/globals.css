@@ -253,12 +253,15 @@ a {
 }
 
 .img-button {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   background-image: url(./ui/Documents/ButtonDownload.png);
 }
 
-.img-button-look {
-  background-image: url(./ui/Documents/look.png);
-}
+
 
 .flebol-img {
   height: 120px;
@@ -815,4 +818,11 @@ a {
     border-radius: 10px;
     padding: 10px 5px;
   }
+}
+
+
+.government-organizations {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

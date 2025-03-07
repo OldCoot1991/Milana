@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const FooterLayout = styled.footer`
   margin-top: 40px;
+  padding-top: 40px;
   padding-left: calc(50px + (200 - 50) * ((100vw - 1024px) / (1920 - 1024)));
   padding-right: calc(150px + (200 - 150) * ((100vw - 1024px) / (1920 - 1024)));
   padding-bottom: 60px;
@@ -11,7 +12,7 @@ const FooterLayout = styled.footer`
   justify-content: space-around; 
   @media (max-width: 1024px) {
     margin-top: 50px;
-    padding-top: 100px;
+    padding-top: 40px;
     padding-left: 50px;
   }
   @media (max-width: 768px) {
