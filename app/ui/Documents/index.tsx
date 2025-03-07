@@ -18,7 +18,6 @@ const ContainerDocumentsContent = styled.div`
   border-bottom: 1px solid #0db0b8;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  max-width: 1530px;
   display: flex;
   justify-content: space-between;
   align-items: center;
