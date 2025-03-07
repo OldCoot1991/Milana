@@ -21,11 +21,11 @@ const documents = [
   },
   {
     title: "Договор об оказании платных медицинских услуг",
-    pdfPath: "/docfile/doc_2.pdf"
+    pdfPath: "/docfile/doc_2.docx"
   },
   {
     title: "Реквизиты компании",
-    pdfPath: "/docfile/doc_3.pdf"
+    pdfPath: "/docfile/doc_3.doc"
   },
 ];
 export default function IndexPage() {
